@@ -16,7 +16,7 @@
     "@astrojs/tailwind": "^5.1.0",
     "@tailwindcss/typography": "^0.5.19",
     "astro": "^4.1.1",
-    "katex": "^0.16.9",
+    "katex": "^0.18.1",
     "lucide-react": "^0.309.0",
     "plantuml-encoder": "^1.4.0",
     "react": "^18.2.0",
