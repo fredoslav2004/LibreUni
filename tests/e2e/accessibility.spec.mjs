@@ -4,6 +4,7 @@ import { expect, test } from '@playwright/test';
 const A11Y_ROUTES = [
   { name: 'main home', url: 'http://127.0.0.1:4321/' },
   { name: 'main Python lesson', url: 'http://127.0.0.1:4321/lessons/python/intro.html' },
+  { name: 'main About page', url: 'http://127.0.0.1:4321/about.html' },
 ];
 
 const AXE_TAGS = ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa'];

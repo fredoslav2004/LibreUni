@@ -1,7 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { ArrowRight, BookOpen, Compass, GraduationCap, Github, GitBranch, Calendar } from 'lucide-react';
+import { ArrowRight, BookOpen, Compass, GraduationCap, GitBranch, Calendar, Megaphone } from 'lucide-react';
 import { execSync } from 'child_process';
+import { projectUpdates } from '../data/project-updates';
 
 let commitHash = 'Unknown';
 try {
@@ -123,6 +124,38 @@ const buildTime = new Date().toUTCString();
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <div id="updates" class="mt-16 grid gap-10 border-t border-light-border pt-16 dark:border-dark-border md:grid-cols-[1fr_1.4fr]">
+            <div>
+                <p class="mb-3 text-xs font-black uppercase tracking-[0.25em] text-primary">Updates</p>
+                <h2 class="text-4xl font-black tracking-tight text-light-text dark:text-dark-text md:text-5xl">Notes from the project.</h2>
+                <p class="mt-6 max-w-md text-base font-medium leading-relaxed text-light-muted dark:text-dark-muted">
+                    Occasional messages about where LibreUni is going, what is changing, and why.
+                </p>
+            </div>
+
+            <div class="space-y-6">
+                {projectUpdates.map((entry) => (
+                    <article class="rounded-2xl border border-light-border bg-white p-6 dark:border-dark-border dark:bg-dark-surface md:p-8">
+                        <div class="flex items-center justify-between gap-4">
+                            <div class="inline-flex items-center gap-3 text-primary">
+                                <div class="rounded-xl bg-primary/10 p-3">
+                                    <Megaphone size={20} strokeWidth={2.5} />
+                                </div>
+                                <span class="text-xs font-black uppercase tracking-[0.2em]">{entry.label}</span>
+                            </div>
+                            <time datetime={entry.date} class="text-xs font-black uppercase tracking-wider text-light-muted dark:text-dark-muted">
+                                {new Intl.DateTimeFormat('en', { dateStyle: 'medium', timeZone: 'UTC' }).format(new Date(`${entry.date}T00:00:00Z`))}
+                            </time>
+                        </div>
+                        <h3 class="mt-6 text-2xl font-black tracking-tight text-light-text dark:text-dark-text">{entry.title}</h3>
+                        <div class="mt-5 space-y-4 text-base font-medium leading-relaxed text-light-muted dark:text-dark-muted">
+                            {entry.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+                        </div>
+                    </article>
+                ))}
             </div>
         </div>
     </section>

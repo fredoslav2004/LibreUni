@@ -11,6 +11,8 @@ const captures = [
   { name: 'career-path-monochrome-light', url: '/careers/ai-specialist.html', theme: 'monochrome', mode: 'light', viewport: { width: 1440, height: 1000 } },
   { name: 'career-path-monochrome-dark-mobile', url: '/careers/ai-specialist.html', theme: 'monochrome', mode: 'dark', viewport: { width: 390, height: 844 } },
   { name: 'development-monochrome-light', url: '/development.html', theme: 'monochrome', mode: 'light', viewport: { width: 1440, height: 1000 } },
+  { name: 'about-monochrome-light', url: '/about.html', theme: 'monochrome', mode: 'light', viewport: { width: 1440, height: 1000 } },
+  { name: 'about-monochrome-light-mobile', url: '/about.html', theme: 'monochrome', mode: 'light', viewport: { width: 390, height: 844 } },
   { name: 'lesson-monochrome-light-mobile', url: '/lessons/python/intro.html', theme: 'monochrome', mode: 'light', viewport: { width: 390, height: 844 } },
   { name: 'theme-menu-monochrome-dark', url: '/', theme: 'monochrome', mode: 'dark', viewport: { width: 1440, height: 1000 }, openThemeMenu: true },
   { name: 'catalog-modern-mobile', url: '/courses.html', theme: 'modern', mode: 'light', viewport: { width: 390, height: 844 } },

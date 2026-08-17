@@ -21,6 +21,12 @@ const ROUTES = [
     expectedTitle: /Python/i,
     expectedText: /Python/i,
   },
+  {
+    name: 'main About page',
+    url: 'http://127.0.0.1:4321/about.html',
+    expectedTitle: /About/i,
+    expectedText: /Updates/i,
+  },
 ];
 
 test.describe('production smoke checks', () => {
