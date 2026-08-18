@@ -1,5 +1,10 @@
 import { defineConfig, devices } from '@playwright/test';
 
+// Keep local and CI browser runs quiet when the host injects conflicting color
+// settings. Node warns whenever NO_COLOR is present alongside FORCE_COLOR.
+delete process.env.NO_COLOR;
+process.env.FORCE_COLOR = '0';
+
 const isCI = Boolean(process.env.CI);
 
 export default defineConfig({
@@ -25,7 +30,7 @@ export default defineConfig({
     video: 'retain-on-failure',
   },
   webServer: {
-    command: 'node tools/serve-test-apps.mjs',
+    command: 'node tools/run-test-server.mjs',
     reuseExistingServer: !isCI,
     timeout: 120_000,
     url: 'http://127.0.0.1:4321/',

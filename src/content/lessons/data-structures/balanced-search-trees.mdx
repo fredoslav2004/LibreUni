@@ -71,10 +71,6 @@ After rotation: same inorder
 endlegend
 `} />
 
-<StructureDiagram kind="rotation" title="Right rotation preserves inorder order" caption="A local pointer change while preserving the sequence A, x, B, y, C." />
-
-<TreeRotationPlayground client:load />
-
 <Quiz client:load
   question="What property is preserved by every tree rotation?"
   options={["BST inorder order", "Every pointer address", "The old root identity", "The insertion timestamp"]}
@@ -92,6 +88,10 @@ For a node $x$ with key $k$, define lower and upper bounds inherited from ancest
 | Red-black | Black-height equal; no red-red parent-child | $\le 2 \log_2 (n+1)$ | $O(1)$ amortized on insert |
 | Treap | Heap priority + BST order | $O(\log n)$ expected | Randomized shape, no deterministic cases |
 | Weight-balanced (BB[$\alpha$]) | Subtree weight ratio $\le \alpha$ | $O(\log n)$ | Different rotation policy, intricate analysis |
+
+<StructureDiagram kind="rotation" title="Right rotation preserves inorder order" caption="A local pointer change while preserving the sequence A, x, B, y, C." />
+
+<TreeRotationPlayground client:load />
 
 <MathStatement
   id="avl-height-bound"

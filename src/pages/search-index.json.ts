@@ -23,11 +23,11 @@ export async function GET() {
   const lessonData = orderedLessons.map(l => ({
     type: 'lesson',
     title: l.data.title,
-    slug: l.slug,
+    slug: l.id,
     course: courseTitles[l.data.course] ?? l.data.course,
     module: l.data.module ?? '',
     description: l.data.description ?? '',
-    url: `lessons/${l.slug}.html`
+    url: `lessons/${l.id}.html`
   }));
 
   const searchData = [...courseData, ...lessonData];

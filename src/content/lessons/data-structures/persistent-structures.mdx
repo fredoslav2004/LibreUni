@@ -25,8 +25,6 @@ Requires: understanding of binary search trees and asymptotic analysis.
 A data structure is **persistent** if every update produces a new distinguishable version and all prior versions remain observable and unchanged. An **ephemeral** structure discards prior versions on update. **Partial persistence** permits queries on any version but updates only on the newest. **Full persistence** permits updates on any version, creating a branching history graph. **Confluent persistence** additionally permits merging two versions.
 </MathStatement>
 
-<StructureDiagram kind="versions" title="Persistent version roots" caption="Each update publishes a new root while old roots remain valid and readable." />
-
 | Model | Old versions queryable | Old versions updatable | History shape |
 | --- | --- | --- | --- |
 | Ephemeral | no | — | single state (discarded) |
@@ -48,6 +46,8 @@ A data structure is **persistent** if every update produces a new distinguishabl
 />
 
 ## Path copying in binary search trees
+
+<StructureDiagram kind="versions" title="Persistent version roots" caption="Each update publishes a new root while old roots remain valid and readable." />
 
 <MathStatement id="path-copying" kind="proposition" title="Path copying correctness">
 Let $T_v$ be a balanced BST with root $r_v$. An insertion of key $k$ into $T_v$ produces a new version $T_{v'}$ by copying every node on the root-to-insertion-path, reusing all other subtrees by reference. Then:

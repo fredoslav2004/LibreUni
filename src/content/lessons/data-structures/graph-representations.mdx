@@ -53,6 +53,13 @@ An adjacency matrix $A$ has one row and column per vertex. For an unweighted dir
 
 The matrix uses $\Theta(|V|^2)$ space regardless of edge count. Iterating neighbors of $u$ scans an entire row, $O(|V|)$, even if degree is small. Matrix multiplication and Boolean algebra can support specialized dense-graph algorithms, and predictable contiguous storage can outperform pointers on moderate dense graphs. An undirected matrix should maintain symmetry; updating only one triangle violates the representation invariant.
 
+<StructureDiagram
+  kind="array"
+  title="Adjacency-matrix row storage"
+  caption="A matrix gives every vertex pair a fixed cell, making edge lookup direct while reserving space for absent edges."
+  variant="capacity"
+/>
+
 <CodeRunner client:load
   title="Adjacency matrix in Python"
   language="python"
@@ -95,6 +102,13 @@ An adjacency-list representation stores, for each vertex, a collection of outgoi
 For an undirected graph, inserting an edge usually adds $u$ to $v$'s list and $v$ to $u$'s list. The invariant is that each undirected edge has exactly two reciprocal entries, unless parallel edges are explicitly allowed. A directed graph has one entry per directed edge. Weighted entries store destination and weight, and equality for removing an edge must include endpoint and duplicate policy.
 
 Neighbor membership in an unsorted list is $O(\text{degree})$; sorting each list enables binary search but makes insertion more expensive. A per-vertex hash set gives expected constant membership and insertion but loses order and requires hash assumptions. A balanced tree gives ordered neighbors and worst-case logarithmic membership. The best choice depends on the algorithm's primitive operations.
+
+<StructureDiagram
+  kind="list"
+  title="Adjacency-list neighbor storage"
+  caption="Each vertex owns only the neighbors it actually has, keeping sparse-graph storage proportional to vertices plus edges."
+  variant="default"
+/>
 
 <CodeRunner client:load
   title="Adjacency list in Python"

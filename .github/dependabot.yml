@@ -23,7 +23,7 @@ updates:
         patterns:
           - '@playwright/*'
           - '@axe-core/*'
-          - '@lhci/*'
+          - lighthouse
           - colorjs.io
           - '@cantoo/*'
 

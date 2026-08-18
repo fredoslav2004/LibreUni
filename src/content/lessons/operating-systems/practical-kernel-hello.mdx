@@ -21,7 +21,7 @@ This guide details how to create a minimal, **Multiboot-compliant** kernel using
 
 To allow a multiboot-compliant bootloader (such as GRUB) to load and execute the kernel, the final executable must contain a specific, magic header within its first 8 Kilobytes. This header contains configuration flags and a verification checksum.
 
-```nasm
+```plaintext
 ; Declare constants for the Multiboot header.
 MAGIC    equ  0x1BADB002
 FLAGS    equ  0x00

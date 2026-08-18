@@ -35,7 +35,7 @@ const category = course.id.startsWith('math') ? 'Mathematics'
   : course.id === 'team-dynamics' ? 'Management'
   : 'General Studies';
 const categoryClass = ({ Mathematics: 'math', 'Computer Science': 'cs', 'AI & ML': 'ai', Philosophy: 'phil', Development: 'dev', Management: 'mgmt' } as Record<string, string>)[category] ?? 'other';
-const lessonSlugs = lessons.map((lesson) => lesson.slug);
+const lessonSlugs = lessons.map((lesson) => lesson.id);
 const firstLesson = lessons[0];
 ---
 
@@ -106,7 +106,7 @@ const firstLesson = lessons[0];
                 <ul class="mt-4 divide-y divide-light-border dark:divide-dark-border">
                   {module.lessons.map((lesson) => (
                     <li>
-                      <a href={`${import.meta.env.BASE_URL}lessons/${lesson.slug}`} data-lesson-progress={lesson.slug} class="group flex min-h-12 items-center justify-between gap-4 py-3 text-sm font-bold text-light-text transition-colors hover:text-primary dark:text-dark-text">
+                      <a href={`${import.meta.env.BASE_URL}lessons/${lesson.id}`} data-lesson-progress={lesson.id} class="group flex min-h-12 items-center justify-between gap-4 py-3 text-sm font-bold text-light-text transition-colors hover:text-primary dark:text-dark-text">
                         <span>{lesson.data.title}</span>
                         <span class="lesson-complete hidden shrink-0 text-xs font-black uppercase tracking-wider text-emerald-600 dark:text-emerald-400">Complete</span>
                       </a>
@@ -126,7 +126,7 @@ const firstLesson = lessons[0];
         </div>
         <p class="text-xs font-black uppercase tracking-[0.2em] text-light-muted dark:text-dark-muted">Start learning</p>
         {firstLesson ? (
-          <a id="resume-course" class="btn-primary mt-4 w-full !rounded-xl !px-5 !py-3 text-sm" href={`${import.meta.env.BASE_URL}lessons/${firstLesson.slug}`}>Start course</a>
+          <a id="resume-course" class="btn-primary mt-4 w-full !rounded-xl !px-5 !py-3 text-sm" href={`${import.meta.env.BASE_URL}lessons/${firstLesson.id}`}>Start course</a>
         ) : <p class="mt-4 text-sm font-medium text-light-muted dark:text-dark-muted">Lessons are being prepared.</p>}
         <a class="btn-secondary mt-3 w-full !rounded-xl !px-5 !py-3 text-sm" href={`${import.meta.env.BASE_URL}courses/${course.id}.pdf`} target="_blank" rel="noopener" aria-label={`Open ${course.data.title} as a PDF`}>Open PDF</a>
       </aside>

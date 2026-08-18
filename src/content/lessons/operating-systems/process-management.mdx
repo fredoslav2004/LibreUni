@@ -105,7 +105,7 @@ A context switch is pure administrative overhead; the CPU cannot perform useful 
 
 For example, this assembly snippet demonstrates the core register-saving sequence during a context switch on an x86 architecture:
 
-```nasm
+```plaintext
 ; Assembly sequence demonstrating register saving during a context switch
 switch_context:
     ; Push current task's callee-saved registers onto its stack

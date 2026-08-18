@@ -18,7 +18,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: 26
           cache: npm
       - run: npm ci
       - name: Required content gate
@@ -38,7 +38,7 @@ jobs:
             python3-numpy python3-pandas python3-matplotlib
       - uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: 26
           cache: npm
       - run: npm ci
       - name: Install Playwright Chromium
@@ -51,7 +51,7 @@ jobs:
         run: npm run check:ux
       - name: Copy UX report to dist
         run: node tools/copy-ux-report.mjs
-      - name: Lighthouse CI
+      - name: Lighthouse audit
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: npm run check:lighthouse
       - name: Upload test reports
@@ -81,7 +81,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
       - uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: 26
           cache: npm
       - run: npm ci
       - name: Regenerate quality badges

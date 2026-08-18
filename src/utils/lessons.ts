@@ -22,7 +22,7 @@ export type OrderedLesson = LessonEntry & {
 const manifestCache = new Map<string, Promise<CourseManifest>>();
 
 function lessonStem(lesson: LessonEntry) {
-  return lesson.slug.split('/').pop() ?? lesson.slug;
+  return lesson.id.split('/').pop() ?? lesson.id;
 }
 
 function loadCourseManifest(courseId: string) {
@@ -97,7 +97,7 @@ export async function getLessonsByCourse(lessonEntries?: LessonEntry[]) {
 
 export async function getLessonNavigation(courseId: string, currentSlug: string) {
   const lessons = await getCourseLessons(courseId);
-  const currentIndex = lessons.findIndex(l => l.slug === currentSlug);
+  const currentIndex = lessons.findIndex(l => l.id === currentSlug);
   
   return {
     prev: lessons[currentIndex - 1],

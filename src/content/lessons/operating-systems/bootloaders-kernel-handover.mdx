@@ -21,7 +21,7 @@ You might wonder: *Why doesn't the BIOS just load the kernel directly?*
 
 To demonstrate the size and address limitations, consider how a minimal 16-bit Stage 1 bootloader reads sectors from disk. It uses BIOS software interrupts because it cannot access filesystems directly:
 
-```assembly
+```plaintext
 ; Load Stage 1.5/2 from disk using BIOS INT 0x13 in 16-bit Real Mode
 mov ah, 0x02        ; BIOS Read Sectors function
 mov al, 0x08        ; Read 8 sectors (4KB)
@@ -45,7 +45,7 @@ On Linux and many hobbyist OSs, **GRUB 2** is the standard. It works in stages t
 
 An example of a basic GRUB menu config entry `/boot/grub/grub.cfg` which points to a kernel image:
 
-```grub
+```plaintext
 menuentry "LibreUni OS" {
     insmod ext2
     set root='hd0,msdos1'
@@ -65,7 +65,7 @@ A Multiboot-compliant kernel has a "Header" in its first 8KB that contains:
 
 An example of a Multiboot header defined in NASM assembly:
 
-```assembly
+```plaintext
 ; Multiboot Header (GNU Multiboot 1 Specification)
 align 4
 section .multiboot

@@ -24,7 +24,7 @@ A **Linker Script** specifies how the linker compiles input object sections into
 
 For example, a typical linker script (`linker.ld`) defines the starting memory offset and groups the program's segments (`.text`, `.rodata`, `.data`, `.bss`) sequentially:
 
-```ld
+```plaintext
 /* The entry point defined in boot.s */
 ENTRY(_start)
 

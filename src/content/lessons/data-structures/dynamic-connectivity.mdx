@@ -136,6 +136,13 @@ A rollback union-find (also called reversible DSU) supports three operations:
 
 Union by size attaches the smaller root to the larger. Before changing $\text{parent}[b]$ and $\text{size}[a]$, push enough information to restore both—the child root, its old parent, the parent root, and its old size. If a union finds equal roots, push a no-op marker or record the snapshot boundary so the rollback count remains correct. Find follows parents without compression. A rollback must restore exactly the prior parent forest and root metadata; stale rank/size values on nonroots must never be read.
 
+<StructureDiagram
+  kind="versions"
+  title="Rollback snapshots restore one forest state"
+  caption="A snapshot records the history boundary; unions after it may be undone so the earlier connectivity state becomes visible again."
+  variant="default"
+/>
+
 <CodeRunner client:load
   title="Rollback union-find implementation"
   language="python"

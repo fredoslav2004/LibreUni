@@ -1,6 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@config "../../tailwind.config.mjs";
 
 /* 
    PRIMARY DESIGN SYSTEM - BLUE / DARK / HIGH CONTRAST
@@ -730,7 +729,7 @@ pre.astro-code code {
 }
 
 .completed-lesson {
-  @apply bg-emerald-500/5 dark:bg-emerald-500/10 border-emerald-500/20 !important;
+  @apply bg-emerald-500/5 dark:bg-emerald-500/10 border-emerald-500/20;
 }
 
 .dark .completed-lesson {
@@ -787,6 +786,14 @@ code:not(pre code) {
   color: rgb(var(--primary-rgb)) !important;
 }
 
+@utility btn-base {
+  @apply inline-flex items-center justify-center gap-2 font-black transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none;
+}
+
+@utility assessment-action {
+  @apply flex min-h-10 items-center justify-center rounded-md px-4 py-2.5 text-sm font-semibold transition-colors disabled:cursor-not-allowed disabled:bg-light-border disabled:text-light-muted dark:disabled:bg-dark-border dark:disabled:text-dark-muted;
+}
+
 /* Interactive Component Definitions */
 @layer components {
   /* Authoring controls for the dual screen/book presentation. */
@@ -841,10 +848,6 @@ code:not(pre code) {
   }
 
   /* Buttons */
-  .btn-base {
-    @apply inline-flex items-center justify-center gap-2 font-black transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none;
-  }
-
   .btn-primary {
     @apply btn-base bg-primary hover:bg-primary-dark text-primary-foreground px-8 py-4 rounded-2xl shadow-lg shadow-primary/20;
   }
@@ -878,10 +881,6 @@ code:not(pre code) {
 
   .assessment-option-marker {
     @apply mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full border transition-colors;
-  }
-
-  .assessment-action {
-    @apply flex min-h-10 items-center justify-center rounded-md px-4 py-2.5 text-sm font-semibold transition-colors disabled:cursor-not-allowed disabled:bg-light-border disabled:text-light-muted dark:disabled:bg-dark-border dark:disabled:text-dark-muted;
   }
 
   .assessment-action-primary {

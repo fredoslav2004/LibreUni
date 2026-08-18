@@ -66,7 +66,7 @@ The custom UX audit writes `reports/ux/index.html` plus per-page JSON. It checks
 - Horizontal overflow on desktop and mobile viewports.
 - Visible heading sanity checks.
 
-The Lighthouse CI run writes reports to `reports/lighthouse` and enforces accessibility, core metadata, and conservative performance/best-practice budgets.
+The Lighthouse audit writes reports to `reports/lighthouse` and enforces accessibility, core metadata, and conservative performance/best-practice budgets.
 
 The visual capture test writes PNG files to `reports/visual/`. It is a review aid rather than a pixel-diff gate: agents must inspect its output when their work changes the interface.
 

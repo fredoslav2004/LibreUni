@@ -3,6 +3,8 @@ title: "Locality, Layout, and Memory-Aware Structures"
 course: "data-structures"
 description: "Cache lines, indirection, blocking, compact representations, and performance models beyond asymptotic RAM."
 ---
+import StructureDiagram from '../../../components/StructureDiagram.astro';
+
 # Locality, Layout, and Memory-Aware Structures
 
 The RAM model treats every memory access as equal. Modern processors do not: cache lines, translation lookaside buffers, branch prediction, prefetching, allocation, and NUMA make layout part of algorithmic performance. Two structures with the same asymptotic complexity can differ by an order of magnitude because one touches adjacent bytes and the other follows unpredictable pointers. This lesson adds a memory hierarchy model while preserving abstract-data-type reasoning.
@@ -13,17 +15,38 @@ Memory is transferred between caches in fixed-size cache lines, often tens of by
 
 Array layout also affects element width. An array of structures stores all fields together; an array of structures of arrays stores each field in a separate contiguous stream. If an algorithm scans only one field, the latter may move less irrelevant data. If it processes all fields of each item together, the former may be better. Layout is a representation choice subject to the same abstraction function; clients should observe values, not padding or field order unless the ABI exposes it.
 
+<StructureDiagram
+  kind="array"
+  title="Contiguous data and cache lines"
+  caption="Sequential elements occupy neighboring cells, allowing one fetched cache line to serve several logical reads."
+  variant="capacity"
+/>
+
 ## Indirection and pointer chasing
 
 A pointer-based tree or graph introduces at least one dependent load per edge. The next address cannot be known until the current node is read, limiting hardware prefetch. A balanced tree has O(log n) comparisons but may suffer cache misses at each level. A B-tree or cache-oblivious layout stores many keys per block, reducing height and amortizing one miss across several comparisons.
 
 Pointer compression can reduce memory and improve locality when addresses lie in a known arena. Store offsets instead of full pointers, but specify arena lifetime, offset width, alignment, and relocation behavior. A compact representation is not correct if an offset overflows or is interpreted after the arena moves without adjustment.
 
+<StructureDiagram
+  kind="list"
+  title="Indirection creates dependent loads"
+  caption="A pointer-based chain reaches each next node through the previous node, which can turn every logical step into a separate cache miss."
+  variant="default"
+/>
+
 ## Blocking and tiling
 
 Blocking partitions data so an inner computation reuses a working set before eviction. A matrix or graph algorithm can be mathematically unchanged while loop order and tile size alter cache traffic. For a blocked array, the representation invariant must map logical index (i,j) to the correct block and offset. An off-by-one at block boundaries may pass small tests but corrupt only dimensions not divisible by the tile size.
 
 **Worked layout comparison.** Traversing an n-by-n matrix row-major accesses consecutive elements and costs approximately one cache line per block of elements. Column-major traversal in a row-major layout jumps by n elements and can incur a miss for nearly every access when n exceeds cache capacity. Transposing the representation or changing loop order preserves the matrix result but changes memory traffic dramatically.
+
+<StructureDiagram
+  kind="btree"
+  title="Blocking groups work into pages"
+  caption="A blocked representation keeps several related keys or records together so one transfer supports multiple operations."
+  variant="wide"
+/>
 
 ## Cache-aware and cache-oblivious designs
 

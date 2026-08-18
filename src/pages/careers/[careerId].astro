@@ -74,7 +74,7 @@ const courseSlugs: Record<string, string[]> = {};
 internalCourseIds.forEach(id => {
     const courseLessons = allLessons.filter(l => l.data.course === id);
     lessonCounts[id as string] = courseLessons.length;
-    courseSlugs[id as string] = courseLessons.map(l => l.slug);
+    courseSlugs[id as string] = courseLessons.map(l => l.id);
 });
 
 const details = career.data.details || {};

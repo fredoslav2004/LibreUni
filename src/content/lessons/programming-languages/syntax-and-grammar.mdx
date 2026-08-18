@@ -32,7 +32,7 @@ A rule in BNF follows the pattern: `<symbol> ::= __expression__`
 - `<>` brackets denote a non-terminal symbol.
 
 ### Example: Arithmetic Expressions
-```bnf
+```plaintext
 <expr>   ::= <term> | <expr> "+" <term> | <expr> "-" <term>
 <term>   ::= <factor> | <term> "*" <factor> | <term> "/" <factor>
 <factor> ::= <number> | "(" <expr> ")"
@@ -52,11 +52,11 @@ While BNF is powerful, it is also verbose. **Extended Backus-Naur Form (EBNF)** 
 
 ### Comparison: Defining a List of Parameters
 **BNF Version:**
-```bnf
+```plaintext
 <param_list> ::= <identifier> | <identifier> "," <param_list>
 ```
 **EBNF Version:**
-```ebnf
+```plaintext
 param_list = identifier { "," identifier } ;
 ```
 EBNF is the preferred choice for modern language specifications (like Python or Java) because it maps more directly to sequences and optionality.

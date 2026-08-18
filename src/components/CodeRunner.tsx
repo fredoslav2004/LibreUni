@@ -106,7 +106,7 @@ pyodide_http.patch_all()
     
     try {
       const pyodide = await window.loadPyodide({
-        indexURL: "https://cdn.jsdelivr.net/pyodide/v0.25.0/full/"
+        indexURL: "https://cdn.jsdelivr.net/pyodide/v314.0.5/full/"
       });
 
       window.pyodideInstance = pyodide;

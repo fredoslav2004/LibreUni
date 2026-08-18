@@ -29,7 +29,7 @@ const colorModes = COLOR_MODES.map((mode) => mode.id);
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,500;7..72,600;7..72,700;7..72,800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script is:inline src="https://cdn.jsdelivr.net/pyodide/v0.25.0/full/pyodide.js"></script>
+    <script is:inline src="https://cdn.jsdelivr.net/pyodide/v314.0.5/full/pyodide.js"></script>
     <script>
       // Force hoisted script generation
       console.log("LibreUni: Production bundle active");
@@ -823,6 +823,7 @@ const colorModes = COLOR_MODES.map((mode) => mode.id);
 </html>
 
 <style is:global>
+  @reference '../styles/global.css';
   :root {
     --accent: 0, 0, 0;
   }
@@ -865,7 +866,7 @@ const colorModes = COLOR_MODES.map((mode) => mode.id);
 
   /* UNIFIED CODE BLOCK SYSTEM (START FROM ZERO) */
   .astro-code {
-    @apply rounded-[1.5rem] p-6 my-8 shadow-sm border transition-colors duration-200 !important;
+    @apply rounded-[1.5rem] p-6 my-8 shadow-sm border transition-colors duration-200;
     font-size: 15.2px !important;
     line-height: 25.84px !important;
     background-color: var(--astro-code-color-background) !important;

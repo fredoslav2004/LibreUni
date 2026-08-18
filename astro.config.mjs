@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config';
-import tailwind from '@astrojs/tailwind';
+import { unified } from '@astrojs/markdown-remark';
+import tailwindcss from '@tailwindcss/vite';
 import mdx from '@astrojs/mdx';
 import react from '@astrojs/react';
 import remarkMath from 'remark-math';
@@ -43,7 +44,7 @@ function checkPythonDiagramErrors() {
 }
 
 // Common Markdown configuration for extreme performance
-const markdownConfig = {
+const markdownProcessor = unified({
   remarkPlugins: [remarkMath, validateMathPlugin],
   rehypePlugins: [
     [rehypeKatex, { 
@@ -51,14 +52,15 @@ const markdownConfig = {
       strict: false     // Skips some checks for speed
     }]
   ],
-  shikiConfig: {
-    theme: 'css-variables', // Drastically reduces HTML size by using classes instead of inline styles
-    langs: [
-      'c', 'cpp', 'python', 'java', 'javascript', 'typescript', 
-      'bash', 'cmake', 'plaintext', 'yaml', 'json'
-    ],
-    wrap: true,
-  },
+});
+
+const shikiConfig = {
+  theme: 'css-variables', // Drastically reduces HTML size by using classes instead of inline styles
+  langs: [
+    'c', 'cpp', 'python', 'java', 'javascript', 'typescript',
+    'bash', 'cmake', 'plaintext', 'yaml', 'json'
+  ],
+  wrap: true,
 };
 
 // Do not allow malformed TeX to silently become visible source text. The
@@ -93,20 +95,23 @@ function validateMathPlugin() {
 export default defineConfig({
   base: '/',
   integrations: [
-    tailwind(), 
-    mdx(markdownConfig), // MDX will use the same optimized config
+    mdx(), // MDX inherits the shared Markdown processor below
     react(),
     checkPythonDiagramErrors()
   ],
-  markdown: markdownConfig,
+  markdown: {
+    processor: markdownProcessor,
+    shikiConfig,
+  },
   build: {
     assets: 'assets',
     format: 'file',
     concurrency: 40, // Kill it with metal (Aggressive parallel generation)
   },
   vite: {
+    plugins: [tailwindcss()],
     ssr: {
-      noExternal: ['lucide-react', 'react-katex']
+      noExternal: ['lucide-react']
     },
     build: {
       reportCompressedSize: false,

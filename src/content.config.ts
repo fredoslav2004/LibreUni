@@ -1,7 +1,9 @@
-import { defineCollection, z } from 'astro:content';
+import { defineCollection } from 'astro:content';
+import { z } from 'astro/zod';
+import { glob } from 'astro/loaders';
 
-const coursesCollection = defineCollection({
-  type: 'data',
+const courses = defineCollection({
+  loader: glob({ pattern: '**/*.json', base: './src/content/courses' }),
   schema: z.object({
     title: z.string(),
     description: z.string(),
@@ -18,8 +20,8 @@ const coursesCollection = defineCollection({
   }),
 });
 
-const lessonsCollection = defineCollection({
-  type: 'content',
+const lessons = defineCollection({
+  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/lessons' }),
   schema: z.object({
     title: z.string(),
     course: z.string(),
@@ -27,8 +29,8 @@ const lessonsCollection = defineCollection({
   }),
 });
 
-const careersCollection = defineCollection({
-  type: 'data',
+const careers = defineCollection({
+  loader: glob({ pattern: '**/*.json', base: './src/content/careers' }),
   schema: z.object({
     title: z.string(),
     description: z.string(),
@@ -68,8 +70,4 @@ const careersCollection = defineCollection({
   }),
 });
 
-export const collections = {
-  'courses': coursesCollection,
-  'lessons': lessonsCollection,
-  'careers': careersCollection,
-};
+export const collections = { courses, lessons, careers };

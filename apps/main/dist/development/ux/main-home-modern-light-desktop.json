@@ -233,11 +233,11 @@
         "label": "input",
         "selector": "astro-island > div.relative.w-full > div.relative > input.input-field.pl-16",
         "rect": {
-          "bottom": 769,
+          "bottom": 768.8,
           "height": 70,
           "left": 112,
           "right": 880,
-          "top": 699,
+          "top": 698.8,
           "width": 768
         }
       },
@@ -245,11 +245,11 @@
         "label": "Browse Courses",
         "selector": "section.relative.overflow-hidden:nth-of-type(1) > div.relative.z-10:nth-of-type(2) > div.mt-10.flex:nth-of-type(3) > a.group.inline-flex:nth-of-type(1)",
         "rect": {
-          "bottom": 863,
+          "bottom": 862.8,
           "height": 54,
           "left": 112,
           "right": 358.6,
-          "top": 809,
+          "top": 808.8,
           "width": 246.6
         }
       },
@@ -257,11 +257,11 @@
         "label": "Career Paths",
         "selector": "section.relative.overflow-hidden:nth-of-type(1) > div.relative.z-10:nth-of-type(2) > div.mt-10.flex:nth-of-type(3) > a.group.inline-flex:nth-of-type(2)",
         "rect": {
-          "bottom": 863,
+          "bottom": 862.8,
           "height": 54,
           "left": 374.6,
           "right": 589.4,
-          "top": 809,
+          "top": 808.8,
           "width": 214.8
         }
       }

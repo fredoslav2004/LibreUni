@@ -82,7 +82,7 @@ Modern DSL development rarely involves writing a recursive descent parser by han
 -   **ANTLR**: A powerful tool that generates "LL(*)" parsers. It supports "semantic predicates," allowing the parser to make decisions based on context that regular grammars can't handle.
 -   **PEG (Parsing Expression Grammars)**: A newer alternative that eliminates ambiguity by making the order of choices significant.
 
-```ebnf
+```plaintext
 (* Simple EBNF for a Robot Control DSL *)
 command    = "move" direction distance | "turn" angle ;
 direction  = "north" | "south" | "east" | "west" ;

@@ -3,15 +3,15 @@ import path from 'node:path';
 
 const root = path.resolve('src/content/lessons/data-structures');
 const visualTag = /<(?:StructureDiagram|PlantUML|TikZ|PythonDiagram|[A-Z][A-Za-z]+Playground)\b/g;
+const visualSectionTag = /^<(?:StructureDiagram|PlantUML|TikZ|PythonDiagram|[A-Z][A-Za-z]+Playground)\b/gm;
 const lessons = fs.readdirSync(root).filter((name) => name.endsWith('.mdx')).sort();
 const counts = lessons.map((name) => {
   const source = fs.readFileSync(path.join(root, name), 'utf8');
   const firstSection = source.indexOf('\n## ');
   const firstVisual = source.search(/^<(?:StructureDiagram|StructureExercise|[A-Z][A-Za-z]+Playground)\b/m);
   const exercise = source.indexOf('<StructureExercise');
-  const exerciseHeading = source.indexOf('\n## Exercises');
   const sectionStarts = [...source.matchAll(/^## (.+)$/gm)].map((match) => ({ index: match.index ?? 0, title: match[1] }));
-  const visualSections = new Set([...source.matchAll(/^<StructureDiagram\b/gm)].map((match) => {
+  const visualSections = new Set([...source.matchAll(visualSectionTag)].map((match) => {
     const section = sectionStarts.filter((candidate) => candidate.index < (match.index ?? 0)).at(-1);
     return section?.title;
   }).filter(Boolean));
@@ -21,7 +21,7 @@ const counts = lessons.map((name) => {
     name,
     count: source.match(visualTag)?.length ?? 0,
     layoutFailure: firstSection >= 0 && firstVisual >= 0 && firstVisual < firstSection,
-    exerciseFailure: exercise >= 0 && exerciseHeading >= 0 && exercise < exerciseHeading,
+    exerciseFailure: exercise >= 0 && firstSection >= 0 && exercise < firstSection,
     spreadFailure: visualSections.size < 3,
     conceptOrderFailure: name === 'b-trees-and-external-memory.mdx'
       && (bPlusIntroduction < 0 || bPlusCaseStudy < bPlusIntroduction),

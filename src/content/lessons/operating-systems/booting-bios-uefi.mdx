@@ -20,7 +20,7 @@ The system firmware—either a Legacy BIOS or a modern UEFI—immediately perfor
 
 An example of the assembly instruction executed at the x86 reset vector:
 
-```assembly
+```plaintext
 ; Reset Vector at physical address 0xFFFFFFF0
 jmp 0xF000:0xE05B   ; Far jump to BIOS initial entry point
 ```

@@ -69,7 +69,7 @@ LibreUni/
 │   └── visual/                # Visual regression capture
 ├── tools/                     # Build and test helpers
 ├── Dockerfile                 # Multi-stage static site builder
-├── lighthouserc.cjs           # Lighthouse CI config
+├── lighthouserc.cjs           # Lighthouse audit config
 ├── playwright.config.mjs      # Playwright test config
 └── package-lock.json          # Locked dependencies
 ```
@@ -80,7 +80,7 @@ Follow these steps to set up the project locally for development.
 
 ### Prerequisites
 
-- Node.js (v18 or higher recommended)
+- Node.js 26 (the CI/container runtime; Node.js >=22.12.0 is supported by the package engine)
 - Python 3.x (for running content validation scripts)
 
 ### Installation

@@ -144,7 +144,7 @@ Unlike paging's fixed-size structure, **Segmentation** divides memory into varia
 
 In legacy x86 architectures, segmentation calculates physical memory addresses by adding the segment base address to an instruction offset. The following x86 Assembly code demonstrates this segment-base calculation:
 
-```assembly
+```plaintext
 ; Example: Segmentation register access in x86 Assembly (16-bit Real Mode)
 mov ax, 0x1000      ; Load segment base address into general register
 mov ds, ax          ; Move base address to Data Segment register (DS)

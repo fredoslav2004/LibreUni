@@ -94,20 +94,20 @@ import { PanelLeftClose, PanelLeftOpen, X } from 'lucide-react';
         <h3 class="px-4 py-3 label-caps mt-8 first:mt-0 mb-2 leading-none border-b border-light-border/50 dark:border-dark-border/50">{item.title}</h3>
       ) : (
         <a 
-          href={`${import.meta.env.BASE_URL}lessons/${item.lesson!.slug}`}
-          data-slug={item.lesson!.slug}
+          href={`${import.meta.env.BASE_URL}lessons/${item.lesson!.id}`}
+          data-slug={item.lesson!.id}
           class={`sidebar-lesson-link min-h-11 px-4 py-3 text-sm font-bold transition-all rounded-xl mb-2 flex items-center gap-3 group ${
-            currentSlug === item.lesson!.slug 
+            currentSlug === item.lesson!.id
               ? 'bg-primary text-primary-foreground shadow-lg shadow-primary/10 scale-[1.02]'
               : 'text-light-muted dark:text-dark-muted hover:bg-primary/5 hover:text-light-text dark:hover:text-dark-text'
           }`}
         >
-          <div class={`status-dot w-1.5 h-1.5 rounded-full transition-colors ${currentSlug === item.lesson!.slug ? 'bg-white' : 'bg-transparent group-hover:bg-primary/20'}`}></div>
+          <div class={`status-dot w-1.5 h-1.5 rounded-full transition-colors ${currentSlug === item.lesson!.id ? 'bg-white' : 'bg-transparent group-hover:bg-primary/20'}`}></div>
           <span class="flex-1 truncate">{item.lesson!.data.title}</span>
           <div class="completion-indicator hidden ml-auto p-1 bg-emerald-500/10 rounded-lg text-emerald-500">
              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
           </div>
-          {currentSlug === item.lesson!.slug && <div class="w-1 h-4 bg-white/30 rounded-full"></div>}
+          {currentSlug === item.lesson!.id && <div class="w-1 h-4 bg-white/30 rounded-full"></div>}
         </a>
       )
     ))}

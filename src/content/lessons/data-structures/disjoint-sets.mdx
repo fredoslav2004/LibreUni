@@ -97,6 +97,13 @@ The output reveals a problem: `find(4) = 1`, not `0`. After `union(1, 4)`, the r
 
 Union by size attaches the smaller root under the larger root and updates the size of the new root. The key property: when a node's depth increases, the size of the tree containing it at least doubles.
 
+<StructureDiagram
+  kind="union-find"
+  title="Union by size keeps trees shallow"
+  caption="Each merge attaches the smaller component beneath the larger root, so a node's depth can increase only when its component at least doubles."
+  variant="default"
+/>
+
 <MathStatement id="size-bound" kind="lemma" title="Height bound under union by size">
 If union always attaches the smaller tree under the larger tree by node count, then the height of any tree with $n$ nodes is at most $\lfloor \log_2 n \rfloor$. Consequently, $\text{Find}$ costs $O(\log n)$ in the worst case.
 </MathStatement>
@@ -141,6 +148,13 @@ Without path compression, `find` remains $O(\log n)$ under union by size. Path c
 ## Path compression
 
 `Find(x)` traverses the path from $x$ to its root. Path compression redirects every node on the traversed path to point directly at the root. The returned representative is unchanged, but future finds on those nodes become $O(1)$.
+
+<StructureDiagram
+  kind="union-find"
+  title="Path compression shortens future finds"
+  caption="After find(3) reaches root 0, the visited path is redirected toward 0 while the partition and representative remain unchanged."
+  variant="default"
+/>
 
 <MathStatement id="compression-correct" kind="theorem" title="Path-compression correctness">
 Path compression preserves the abstract invariant: after $\text{Find}(x)$ with compression, every redirected node remains in the same equivalence class. No compression operation can create a cycle or detach a subtree.

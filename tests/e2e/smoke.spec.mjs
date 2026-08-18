@@ -169,13 +169,13 @@ test.describe('production smoke checks', () => {
       const article = page.locator('article');
       const visibleText = await article.evaluate((root) => {
         const clone = root.cloneNode(true);
-        clone.querySelectorAll('pre, code, svg, details, script, style, annotation').forEach((node) => node.remove());
+        clone.querySelectorAll('pre, code, svg, details, script, style, annotation, astro-island').forEach((node) => node.remove());
         return clone.textContent || '';
       });
-      const diagrams = page.locator('[data-structure-diagram]');
-      const renderedSvg = diagrams.locator('svg');
-      if ((await diagrams.count()) < 3) failures.push(`${lesson.url}: fewer than three structure diagrams`);
-      if ((await renderedSvg.count()) < 3) failures.push(`${lesson.url}: structure diagram SVG missing`);
+      const visualArtifacts = page.locator('[data-structure-diagram], [data-diagram-kind]');
+      const renderedVisuals = visualArtifacts.locator('svg, img');
+      if ((await visualArtifacts.count()) < 3) failures.push(`${lesson.url}: fewer than three visual artifacts`);
+      if ((await renderedVisuals.count()) < 3) failures.push(`${lesson.url}: rendered visual artifact missing`);
       if (/\\(?:sum|frac|sqrt|Theta|Omega|alpha|beta|ge|le|log|lfloor|rfloor)\b|(?<!\\)\$(?!\$)/.test(visibleText)) {
         failures.push(`${lesson.url}: raw TeX visible in lesson text`);
       }

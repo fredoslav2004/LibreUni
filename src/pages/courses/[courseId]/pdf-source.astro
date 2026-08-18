@@ -1,5 +1,5 @@
 ---
-import { getCollection, getEntry } from 'astro:content';
+import { getCollection, getEntry, render } from 'astro:content';
 import 'katex/dist/katex.min.css';
 import Quiz from '../../../components/Quiz';
 import CaseStudy from '../../../components/CaseStudy';
@@ -34,7 +34,7 @@ const course = await getEntry('courses', courseId as any);
 
 // Render all lessons in parallel
 const lessonsWithContent = await Promise.all(allLessons.map(async (lesson) => {
-  const rendered = await lesson.render();
+  const rendered = await render(lesson);
   return {
     data: lesson.data,
     id: lesson.id,
@@ -84,7 +84,7 @@ const components = {
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.18.4/dist/katex.min.css">
     <style is:global>
       @page {
         size: A4;
