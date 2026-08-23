@@ -2,25 +2,17 @@
   "algorithms": {
     "codeBlockCount": 2,
     "componentCounts": {
-      "CaseStudy": 17,
-      "CodeExercise": 20,
+      "CaseStudy": 20,
+      "CodeExercise": 22,
       "CodeRunner": 35,
-      "Quiz": 50
+      "Quiz": 64
     },
     "courseId": "algorithms",
     "lessonCount": 21,
     "smokeTest": {
-      "errors": [
-        "src/content/lessons/algorithms/np-completeness.mdx:91: python block failed: SyntaxError: unexpected character after line continuation character",
-        "src/content/lessons/algorithms/np-completeness.mdx:295: python block failed: SyntaxError: unexpected character after line continuation character",
-        "src/content/lessons/algorithms/np-completeness.mdx:367: python block failed: SyntaxError: unexpected character after line continuation character",
-        "/courses/algorithms/: puml-errors.log: Command failed: java -Djava.awt.headless=true -jar /home/edf/puml.jar -pipe -tsvg",
-        "/lessons/algorithms/: puml-errors.log: Command failed: java -Djava.awt.headless=true -jar /home/edf/puml.jar -pipe -tsvg",
-        "/courses/algorithms/: tikz-errors.log: Command failed: latex -interaction=nonstopmode -halt-on-error diagram.tex",
-        "/lessons/algorithms/: tikz-errors.log: Command failed: latex -interaction=nonstopmode -halt-on-error diagram.tex"
-      ],
-      "meaning": "At least one smoke test failed; this says nothing about pedagogical quality.",
-      "status": "failed"
+      "errors": [],
+      "meaning": "No detected broken course structure or supported code syntax.",
+      "status": "passed"
     }
   },
   "c": {
@@ -34,12 +26,9 @@
     "courseId": "c",
     "lessonCount": 29,
     "smokeTest": {
-      "errors": [
-        "src/content/lessons/c/error-handling.mdx:71: c block failed at runtime: Fatal Error: Division by zero avoided.",
-        "src/content/lessons/c/strings.mdx:48: c block failed: /tmp/tmpwatvhnjc.c:8:13: error: empty character constant"
-      ],
-      "meaning": "At least one smoke test failed; this says nothing about pedagogical quality.",
-      "status": "failed"
+      "errors": [],
+      "meaning": "No detected broken course structure or supported code syntax.",
+      "status": "passed"
     }
   },
   "computation-theory": {
@@ -90,55 +79,6 @@
       "status": "passed"
     }
   },
-  "cpp": {
-    "codeBlockCount": 556,
-    "componentCounts": {
-      "CaseStudy": 0,
-      "CodeExercise": 15,
-      "CodeRunner": 37,
-      "Quiz": 38
-    },
-    "courseId": "cpp",
-    "lessonCount": 40,
-    "smokeTest": {
-      "errors": [
-        "src/content/lessons/cpp/atomic-operations.mdx:259: cpp block failed: /tmp/tmpfr64ydgu.cpp:16:62: error: empty character constant",
-        "src/content/lessons/cpp/best-practices.mdx:544: cpp block failed: /tmp/tmph90t3vmk.cpp:20:36: error: empty character constant",
-        "src/content/lessons/cpp/concepts.mdx:234: cpp block failed: /tmp/tmpi5iq1ns_.cpp:19:37: error: empty character constant",
-        "src/content/lessons/cpp/condition-variables-futures.mdx:250: cpp block failed: /tmp/tmpxh11zm76.cpp:19:48: error: empty character constant",
-        "src/content/lessons/cpp/constexpr-evolution.mdx:353: cpp block failed: /tmp/tmpz_scsfin.cpp:19:38: error: empty character constant",
-        "src/content/lessons/cpp/coroutines.mdx:269: cpp block failed: /tmp/tmpfx3wy6cf.cpp:34:18: error: empty character constant",
-        "src/content/lessons/cpp/cpp-journey.mdx:389: cpp block failed: /tmp/tmpogiacfye.cpp:24:18: error: empty character constant",
-        "src/content/lessons/cpp/designated-initializers.mdx:285: cpp block failed: /tmp/tmplr3ep6nd.cpp:24:80: error: empty character constant",
-        "src/content/lessons/cpp/exception-handling.mdx:257: cpp block failed: /tmp/tmpbmsk1z3v.cpp:22:48: error: empty character constant",
-        "src/content/lessons/cpp/expected.mdx:372: cpp block failed: /tmp/tmpur77gbw_.cpp:25:47: error: empty character constant",
-        "src/content/lessons/cpp/filesystem.mdx:225: cpp block failed: /tmp/tmprx3ak4ti.cpp:9:40: error: empty character constant",
-        "src/content/lessons/cpp/format.mdx:312: cpp block failed: /tmp/tmpvwmd21k3.cpp:10:30: error: missing terminating \" character",
-        "src/content/lessons/cpp/functions-overloading.mdx:167: cpp block failed: /tmp/tmpaqzlvnxz.cpp:12:82: error: empty character constant",
-        "src/content/lessons/cpp/intro.mdx:113: cpp block failed: /tmp/tmpv8qfs_as.cpp:6:29: error: empty character constant",
-        "src/content/lessons/cpp/iterators.mdx:261: cpp block failed: /tmp/tmpldqkval6.cpp:17:18: error: empty character constant",
-        "src/content/lessons/cpp/lambda-expressions.mdx:228: cpp block failed: /tmp/tmp9t1rbxkj.cpp:15:65: error: empty character constant",
-        "src/content/lessons/cpp/memory-advanced.mdx:498: cpp block failed: /tmp/tmp097cmaqe.cpp:17:51: error: empty character constant",
-        "src/content/lessons/cpp/multithreading-basics.mdx:244: cpp block failed: /tmp/tmpkwf4la60.cpp:28:44: error: empty character constant",
-        "src/content/lessons/cpp/namespaces.mdx:234: cpp block failed: /tmp/tmpacl1f4m5.cpp:22:49: error: empty character constant",
-        "src/content/lessons/cpp/operator-overloading.mdx:222: cpp block failed: /tmp/tmpe4hhpc2n.cpp:25:29: error: empty character constant",
-        "src/content/lessons/cpp/optional-variant.mdx:226: cpp block failed: /tmp/tmp57wh_bp_.cpp:13:50: error: empty character constant",
-        "src/content/lessons/cpp/ranges.mdx:283: cpp block failed: /tmp/tmpluxw0rjb.cpp:20:18: error: empty character constant",
-        "src/content/lessons/cpp/smart-pointers.mdx:193: cpp block failed: /tmp/tmpoz9572u3.cpp:19:57: error: empty character constant",
-        "src/content/lessons/cpp/spaceship-operator.mdx:283: cpp block failed: /tmp/tmpbnkylb2i.cpp:15:46: error: empty character constant",
-        "src/content/lessons/cpp/stl-algorithms.mdx:229: cpp block failed: /tmp/tmp_zy380va.cpp:12:18: error: empty character constant",
-        "src/content/lessons/cpp/stl-associative-containers.mdx:191: cpp block failed: /tmp/tmpntxvfbqw.cpp:16:18: error: empty character constant",
-        "src/content/lessons/cpp/stl-sequence-containers.mdx:180: cpp block failed: /tmp/tmplkshbey_.cpp:11:18: error: empty character constant",
-        "src/content/lessons/cpp/string-view-span.mdx:208: cpp block failed: /tmp/tmpjppy0oe8.cpp:29:18: error: empty character constant",
-        "src/content/lessons/cpp/structured-bindings.mdx:214: cpp block failed: /tmp/tmpobcmhro3.cpp:10:62: error: empty character constant",
-        "src/content/lessons/cpp/templates-generic.mdx:234: cpp block failed: /tmp/tmpdj7ej4xi.cpp:16:32: error: empty character constant",
-        "src/content/lessons/cpp/type-traits.mdx:219: cpp block failed: /tmp/tmpoajt_a5t.cpp:7:51: error: empty character constant",
-        "src/content/lessons/cpp/types-declarations.mdx:169: cpp block failed: /tmp/tmpdz9isoyl.cpp:14:64: error: empty character constant"
-      ],
-      "meaning": "At least one smoke test failed; this says nothing about pedagogical quality.",
-      "status": "failed"
-    }
-  },
   "cryptography-security": {
     "codeBlockCount": 0,
     "componentCounts": {
@@ -156,22 +96,19 @@
     }
   },
   "data-structures": {
-    "codeBlockCount": 7,
+    "codeBlockCount": 8,
     "componentCounts": {
       "CaseStudy": 25,
-      "CodeExercise": 12,
-      "CodeRunner": 26,
-      "Quiz": 51
+      "CodeExercise": 11,
+      "CodeRunner": 30,
+      "Quiz": 58
     },
     "courseId": "data-structures",
     "lessonCount": 23,
     "smokeTest": {
-      "errors": [
-        "src/content/lessons/data-structures/dynamic-connectivity.mdx: <CodeRunner> is missing client:load",
-        "src/content/lessons/data-structures/dynamic-connectivity.mdx: <Quiz> is missing client:load"
-      ],
-      "meaning": "At least one smoke test failed; this says nothing about pedagogical quality.",
-      "status": "failed"
+      "errors": [],
+      "meaning": "No detected broken course structure or supported code syntax.",
+      "status": "passed"
     }
   },
   "database-systems": {
@@ -184,245 +121,6 @@
     },
     "courseId": "database-systems",
     "lessonCount": 20,
-    "smokeTest": {
-      "errors": [],
-      "meaning": "No detected broken course structure or supported code syntax.",
-      "status": "passed"
-    }
-  },
-  "devops": {
-    "codeBlockCount": 1,
-    "componentCounts": {
-      "CaseStudy": 4,
-      "CodeExercise": 4,
-      "CodeRunner": 0,
-      "Quiz": 10
-    },
-    "courseId": "devops",
-    "lessonCount": 31,
-    "smokeTest": {
-      "errors": [],
-      "meaning": "No detected broken course structure or supported code syntax.",
-      "status": "passed"
-    }
-  },
-  "git": {
-    "codeBlockCount": 97,
-    "componentCounts": {
-      "CaseStudy": 0,
-      "CodeExercise": 13,
-      "CodeRunner": 15,
-      "Quiz": 15
-    },
-    "courseId": "git",
-    "lessonCount": 15,
-    "smokeTest": {
-      "errors": [
-        "src/content/lessons/git/advanced-rebasing.mdx:111: CodeRunner declares unsupported language 'git'",
-        "src/content/lessons/git/basic-workflow.mdx:61: CodeRunner declares unsupported language 'git'",
-        "src/content/lessons/git/branching-merging.mdx:131: CodeRunner declares unsupported language 'git'",
-        "src/content/lessons/git/git-hooks.mdx:90: CodeRunner declares unsupported language 'git'",
-        "src/content/lessons/git/git-internals-architecture.mdx:105: CodeRunner declares unsupported language 'git'",
-        "src/content/lessons/git/installation-config.mdx:131: CodeRunner declares unsupported language 'git'",
-        "src/content/lessons/git/professional-workflows.mdx:91: CodeRunner declares unsupported language 'git'",
-        "src/content/lessons/git/remotes-collaboration.mdx:114: CodeRunner declares unsupported language 'git'",
-        "src/content/lessons/git/resolving-conflicts.mdx:102: CodeRunner declares unsupported language 'git'",
-        "src/content/lessons/git/stashing-cleaning.mdx:112: CodeRunner declares unsupported language 'git'",
-        "src/content/lessons/git/submodules-dependency-management.mdx:95: CodeRunner declares unsupported language 'git'",
-        "src/content/lessons/git/tags-releases.mdx:110: CodeRunner declares unsupported language 'git'",
-        "src/content/lessons/git/undoing-changes.mdx:110: CodeRunner declares unsupported language 'git'",
-        "src/content/lessons/git/vcs-concepts.mdx:92: CodeRunner declares unsupported language 'git'",
-        "src/content/lessons/git/viewing-history.mdx:95: CodeRunner declares unsupported language 'git'"
-      ],
-      "meaning": "At least one smoke test failed; this says nothing about pedagogical quality.",
-      "status": "failed"
-    }
-  },
-  "javascript": {
-    "codeBlockCount": 23,
-    "componentCounts": {
-      "CaseStudy": 0,
-      "CodeExercise": 3,
-      "CodeRunner": 20,
-      "Quiz": 16
-    },
-    "courseId": "javascript",
-    "lessonCount": 22,
-    "smokeTest": {
-      "errors": [
-        "src/content/lessons/javascript/modules-patterns.mdx:25: javascript block failed: SyntaxError: Identifier 'add' has already been declared",
-        "src/content/lessons/javascript/oop-classes.mdx:41: javascript block failed: console.log(vault.#accessCode); // Throws SyntaxError",
-        "src/content/lessons/javascript/this-binding.mdx:43: javascript block failed: SyntaxError: Invalid or unexpected token",
-        "src/content/lessons/javascript/typescript-foundations.mdx:14: CodeRunner language 'typescript' requires missing tool 'tsc'",
-        "src/content/lessons/javascript/typescript-foundations.mdx:51: CodeRunner language 'typescript' requires missing tool 'tsc'",
-        "src/content/lessons/javascript/typescript-foundations.mdx:42: javascript block failed: SyntaxError: Unexpected identifier 'Status'"
-      ],
-      "meaning": "At least one smoke test failed; this says nothing about pedagogical quality.",
-      "status": "failed"
-    }
-  },
-  "libreuni": {
-    "codeBlockCount": 2,
-    "componentCounts": {
-      "CaseStudy": 3,
-      "CodeExercise": 1,
-      "CodeRunner": 4,
-      "Quiz": 4
-    },
-    "courseId": "libreuni",
-    "lessonCount": 4,
-    "smokeTest": {
-      "errors": [
-        "src/content/lessons/libreuni/authoring-showcase.mdx:22: CodeRunner language 'typescript' requires missing tool 'tsc'",
-        "src/content/lessons/libreuni/authoring-showcase.mdx:130: javascript block failed: SyntaxError: Invalid or unexpected token"
-      ],
-      "meaning": "At least one smoke test failed; this says nothing about pedagogical quality.",
-      "status": "failed"
-    }
-  },
-  "machine-learning": {
-    "codeBlockCount": 0,
-    "componentCounts": {
-      "CaseStudy": 0,
-      "CodeExercise": 0,
-      "CodeRunner": 22,
-      "Quiz": 23
-    },
-    "courseId": "machine-learning",
-    "lessonCount": 23,
-    "smokeTest": {
-      "errors": [],
-      "meaning": "No detected broken course structure or supported code syntax.",
-      "status": "passed"
-    }
-  },
-  "math": {
-    "codeBlockCount": 0,
-    "componentCounts": {
-      "CaseStudy": 0,
-      "CodeExercise": 0,
-      "CodeRunner": 1,
-      "Quiz": 2
-    },
-    "courseId": "math",
-    "lessonCount": 1,
-    "smokeTest": {
-      "errors": [],
-      "meaning": "No detected broken course structure or supported code syntax.",
-      "status": "passed"
-    }
-  },
-  "math-algebra": {
-    "codeBlockCount": 6,
-    "componentCounts": {
-      "CaseStudy": 0,
-      "CodeExercise": 11,
-      "CodeRunner": 17,
-      "Quiz": 50
-    },
-    "courseId": "math-algebra",
-    "lessonCount": 17,
-    "smokeTest": {
-      "errors": [],
-      "meaning": "No detected broken course structure or supported code syntax.",
-      "status": "passed"
-    }
-  },
-  "math-calculus": {
-    "codeBlockCount": 0,
-    "componentCounts": {
-      "CaseStudy": 0,
-      "CodeExercise": 22,
-      "CodeRunner": 20,
-      "Quiz": 23
-    },
-    "courseId": "math-calculus",
-    "lessonCount": 22,
-    "smokeTest": {
-      "errors": [],
-      "meaning": "No detected broken course structure or supported code syntax.",
-      "status": "passed"
-    }
-  },
-  "math-discrete": {
-    "codeBlockCount": 0,
-    "componentCounts": {
-      "CaseStudy": 0,
-      "CodeExercise": 0,
-      "CodeRunner": 24,
-      "Quiz": 20
-    },
-    "courseId": "math-discrete",
-    "lessonCount": 10,
-    "smokeTest": {
-      "errors": [],
-      "meaning": "No detected broken course structure or supported code syntax.",
-      "status": "passed"
-    }
-  },
-  "math-foundations": {
-    "codeBlockCount": 0,
-    "componentCounts": {
-      "CaseStudy": 0,
-      "CodeExercise": 0,
-      "CodeRunner": 48,
-      "Quiz": 53
-    },
-    "courseId": "math-foundations",
-    "lessonCount": 26,
-    "smokeTest": {
-      "errors": [],
-      "meaning": "No detected broken course structure or supported code syntax.",
-      "status": "passed"
-    }
-  },
-  "math-linear-algebra": {
-    "codeBlockCount": 0,
-    "componentCounts": {
-      "CaseStudy": 0,
-      "CodeExercise": 0,
-      "CodeRunner": 21,
-      "Quiz": 31
-    },
-    "courseId": "math-linear-algebra",
-    "lessonCount": 12,
-    "smokeTest": {
-      "errors": [
-        "src/content/lessons/math/eigen.mdx:58: python block failed: SyntaxError: unterminated f-string literal (detected at line 12)",
-        "src/content/lessons/math/inner-product-spaces.mdx:37: python block failed: SyntaxError: unterminated string literal (detected at line 21)"
-      ],
-      "meaning": "At least one smoke test failed; this says nothing about pedagogical quality.",
-      "status": "failed"
-    }
-  },
-  "math-stats": {
-    "codeBlockCount": 0,
-    "componentCounts": {
-      "CaseStudy": 13,
-      "CodeExercise": 0,
-      "CodeRunner": 2,
-      "Quiz": 23
-    },
-    "courseId": "math-stats",
-    "lessonCount": 10,
-    "smokeTest": {
-      "errors": [
-        "src/content/lessons/math-stats/bayesian-stats.mdx:97: python block failed: SyntaxError: unterminated string literal (detected at line 32)"
-      ],
-      "meaning": "At least one smoke test failed; this says nothing about pedagogical quality.",
-      "status": "failed"
-    }
-  },
-  "math-topology": {
-    "codeBlockCount": 0,
-    "componentCounts": {
-      "CaseStudy": 0,
-      "CodeExercise": 0,
-      "CodeRunner": 9,
-      "Quiz": 10
-    },
-    "courseId": "math-topology",
-    "lessonCount": 5,
     "smokeTest": {
       "errors": [],
       "meaning": "No detected broken course structure or supported code syntax.",
@@ -445,121 +143,6 @@
       "status": "passed"
     }
   },
-  "philosophy": {
-    "codeBlockCount": 0,
-    "componentCounts": {
-      "CaseStudy": 0,
-      "CodeExercise": 0,
-      "CodeRunner": 0,
-      "Quiz": 40
-    },
-    "courseId": "philosophy",
-    "lessonCount": 40,
-    "smokeTest": {
-      "errors": [],
-      "meaning": "No detected broken course structure or supported code syntax.",
-      "status": "passed"
-    }
-  },
-  "philosophy-science": {
-    "codeBlockCount": 0,
-    "componentCounts": {
-      "CaseStudy": 0,
-      "CodeExercise": 0,
-      "CodeRunner": 0,
-      "Quiz": 22
-    },
-    "courseId": "philosophy-science",
-    "lessonCount": 22,
-    "smokeTest": {
-      "errors": [],
-      "meaning": "No detected broken course structure or supported code syntax.",
-      "status": "passed"
-    }
-  },
-  "power-user": {
-    "codeBlockCount": 16,
-    "componentCounts": {
-      "CaseStudy": 0,
-      "CodeExercise": 0,
-      "CodeRunner": 9,
-      "Quiz": 9
-    },
-    "courseId": "power-user",
-    "lessonCount": 9,
-    "smokeTest": {
-      "errors": [
-        "src/content/lessons/power-user/windows-productivity.mdx:61: CodeRunner declares unsupported language 'powershell'",
-        "src/content/lessons/power-user/wsl2-powershell.mdx:52: CodeRunner declares unsupported language 'powershell'"
-      ],
-      "meaning": "At least one smoke test failed; this says nothing about pedagogical quality.",
-      "status": "failed"
-    }
-  },
-  "programming-languages": {
-    "codeBlockCount": 27,
-    "componentCounts": {
-      "CaseStudy": 0,
-      "CodeExercise": 20,
-      "CodeRunner": 0,
-      "Quiz": 0
-    },
-    "courseId": "programming-languages",
-    "lessonCount": 20,
-    "smokeTest": {
-      "errors": [],
-      "meaning": "No detected broken course structure or supported code syntax.",
-      "status": "passed"
-    }
-  },
-  "python": {
-    "codeBlockCount": 1,
-    "componentCounts": {
-      "CaseStudy": 0,
-      "CodeExercise": 0,
-      "CodeRunner": 80,
-      "Quiz": 0
-    },
-    "courseId": "python",
-    "lessonCount": 19,
-    "smokeTest": {
-      "errors": [],
-      "meaning": "No detected broken course structure or supported code syntax.",
-      "status": "passed"
-    }
-  },
-  "rust": {
-    "codeBlockCount": 123,
-    "componentCounts": {
-      "CaseStudy": 0,
-      "CodeExercise": 0,
-      "CodeRunner": 23,
-      "Quiz": 23
-    },
-    "courseId": "rust",
-    "lessonCount": 23,
-    "smokeTest": {
-      "errors": [],
-      "meaning": "No detected broken course structure or supported code syntax.",
-      "status": "passed"
-    }
-  },
-  "software-architecture": {
-    "codeBlockCount": 0,
-    "componentCounts": {
-      "CaseStudy": 0,
-      "CodeExercise": 0,
-      "CodeRunner": 0,
-      "Quiz": 0
-    },
-    "courseId": "software-architecture",
-    "lessonCount": 15,
-    "smokeTest": {
-      "errors": [],
-      "meaning": "No detected broken course structure or supported code syntax.",
-      "status": "passed"
-    }
-  },
   "software-engineering": {
     "codeBlockCount": 72,
     "componentCounts": {
@@ -570,47 +153,6 @@
     },
     "courseId": "software-engineering",
     "lessonCount": 30,
-    "smokeTest": {
-      "errors": [
-        "src/content/lessons/software-engineering/refactoring.mdx:92: javascript block failed: SyntaxError: Illegal return statement",
-        "src/content/lessons/software-engineering/refactoring.mdx:99: javascript block failed: SyntaxError: Illegal return statement",
-        "src/content/lessons/software-engineering/tdd.mdx:41: CodeRunner language 'typescript' requires missing tool 'tsc'",
-        "src/content/lessons/software-engineering/tdd.mdx:52: CodeRunner language 'typescript' requires missing tool 'tsc'",
-        "src/content/lessons/software-engineering/tdd.mdx:61: CodeRunner language 'typescript' requires missing tool 'tsc'",
-        "src/content/lessons/software-engineering/tdd.mdx:69: CodeRunner language 'typescript' requires missing tool 'tsc'",
-        "src/content/lessons/software-engineering/tdd.mdx:78: CodeRunner language 'typescript' requires missing tool 'tsc'",
-        "src/content/lessons/software-engineering/template-iterator.mdx:65: python block failed: SyntaxError: unterminated string literal (detected at line 42)"
-      ],
-      "meaning": "At least one smoke test failed; this says nothing about pedagogical quality.",
-      "status": "failed"
-    }
-  },
-  "team-dynamics": {
-    "codeBlockCount": 0,
-    "componentCounts": {
-      "CaseStudy": 0,
-      "CodeExercise": 0,
-      "CodeRunner": 0,
-      "Quiz": 0
-    },
-    "courseId": "team-dynamics",
-    "lessonCount": 12,
-    "smokeTest": {
-      "errors": [],
-      "meaning": "No detected broken course structure or supported code syntax.",
-      "status": "passed"
-    }
-  },
-  "uml": {
-    "codeBlockCount": 8,
-    "componentCounts": {
-      "CaseStudy": 0,
-      "CodeExercise": 0,
-      "CodeRunner": 0,
-      "Quiz": 1
-    },
-    "courseId": "uml",
-    "lessonCount": 9,
     "smokeTest": {
       "errors": [],
       "meaning": "No detected broken course structure or supported code syntax.",

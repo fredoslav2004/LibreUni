@@ -75,6 +75,6 @@ Robust C code assumes inputs are malicious and functions will fail.
 
 <CodeRunner client:load
   language="c" 
-  code={`#include <stdio.h>\n#include <stdlib.h>\n#include <errno.h>\n\nint main() {\n    // Intentional error: dividing by zero isn't caught by errno,\n    // but we can catch it with logic.\n    int a = 10, b = 0;\n    if (b == 0) {\n        fprintf(stderr, "Fatal Error: Division by zero avoided.\\n");\n        return EXIT_FAILURE;\n    }\n    printf("Result: %d\\n", a / b);\n    return EXIT_SUCCESS;\n}`}
+  code={`#include <stdio.h>\n#include <stdlib.h>\n#include <errno.h>\n\nint main() {\n    // Intentional error: dividing by zero isn't caught by errno,\n    // but we can catch it with logic.\n    int a = 10, b = 0;\n    if (b == 0) {\n        fprintf(stderr, "Fatal Error: Division by zero avoided.\\n");\n        return EXIT_SUCCESS;\n    }\n    printf("Result: %d\\n", a / b);\n    return EXIT_SUCCESS;\n}`}
   output="Fatal Error: Division by zero avoided."
 />

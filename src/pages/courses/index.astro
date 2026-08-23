@@ -10,35 +10,16 @@ const draftCourseCount = courses.length - publicCourseCount;
 
 const categoryLabels: Record<string, string> = {
     all: 'All categories',
-    math: 'Mathematics',
-    cs: 'Computer Science',
-    ai: 'AI & ML',
-    dev: 'Development',
-    phil: 'Philosophy',
-    mgmt: 'Management',
-    other: 'Misc'
+    cs: 'Computer Science'
 };
 
 const stripeLabels: Record<string, string> = {
     all: 'General',
-    math: 'Mathematics',
     cs: 'CS',
-    ai: 'AI/ML',
-    dev: 'Development',
-    phil: 'Philosophy',
-    mgmt: 'Management',
-    other: 'General'
+    other: 'CS'
 };
 
-const getCategory = (courseId: string) => {
-    if (courseId.startsWith('math')) return 'math';
-    if (['c', 'cpp', 'operating-systems', 'software-engineering', 'software-architecture', 'programming-languages'].includes(courseId)) return 'cs';
-    if (['machine-learning'].includes(courseId)) return 'ai';
-    if (['philosophy', 'philosophy-science'].includes(courseId)) return 'phil';
-    if (['devops', 'git', 'uml', 'python', 'javascript', 'libreuni', 'power-user'].includes(courseId)) return 'dev';
-    if (['team-dynamics'].includes(courseId)) return 'mgmt';
-    return 'other';
-};
+const getCategory = (_courseId: string) => 'cs';
 
 ---
 
@@ -50,7 +31,7 @@ const getCategory = (courseId: string) => {
             <div>
                 <h1 class="text-4xl font-black leading-none tracking-tight text-light-text dark:text-dark-text md:text-6xl">Course catalog</h1>
                 <p class="mt-5 max-w-3xl text-lg font-medium leading-relaxed text-light-muted dark:text-dark-muted">
-                    Complete university-level tracks for mathematics, computing, engineering practice, philosophy, and professional systems work.
+                    The rigorous computing core: programming, theory, systems, data, security, and software engineering. Mathematics is explicitly required in the bachelor’s path and is linked to vetted open university material while LibreUni develops its own sequence.
                 </p>
             </div>
         </div>

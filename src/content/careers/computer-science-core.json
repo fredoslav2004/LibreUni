@@ -1,0 +1,41 @@
+{
+  "title": "Computer Science Bachelor’s Core",
+  "description": "A four-stage self-study spine for the computing core of a rigorous bachelor’s degree: mathematics, programming, theory, systems, and a substantial project.",
+  "icon": "graduation",
+  "color": "from-blue-700 to-indigo-900",
+  "steps": [
+    {
+      "title": "Mathematical foundations",
+      "courses": [
+        { "title": "MIT 6.1200 Mathematics for Computer Science", "type": "external", "description": "Proofs, discrete structures, graphs, counting, probability, and recurrences.", "link": "https://ocw.mit.edu/courses/6-1200-mathematics-for-computer-science-spring-2024/" },
+        { "title": "MIT 18.06 Linear Algebra", "type": "external", "description": "A full linear-algebra foundation for computing and later specialization.", "link": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/" }
+      ]
+    },
+    {
+      "title": "Programming and algorithmic thinking",
+      "courses": [
+        { "id": "c", "title": "Programming and Systems in C", "type": "internal" },
+        { "id": "data-structures", "title": "Data Structures", "type": "internal" },
+        { "id": "algorithms", "title": "Algorithms", "type": "internal" },
+        { "id": "computation-theory", "title": "Theory of Computation", "type": "internal" }
+      ]
+    },
+    {
+      "title": "Computer systems",
+      "courses": [
+        { "id": "computer-architecture", "title": "Computer Architecture", "type": "internal" },
+        { "id": "operating-systems", "title": "Operating Systems", "type": "internal" },
+        { "id": "computer-networks", "title": "Computer Networks", "type": "internal" },
+        { "id": "database-systems", "title": "Database Systems", "type": "internal" }
+      ]
+    },
+    {
+      "title": "Responsible engineering and capstone",
+      "courses": [
+        { "id": "software-engineering", "title": "Software Engineering", "type": "internal" },
+        { "id": "cryptography-security", "title": "Cryptography and Security", "type": "internal" },
+        { "title": "Substantial individual or team capstone", "type": "external", "description": "Design, build, test, document, and defend a system that integrates the preceding material. Use a faculty, practitioner, or peer-review process rather than treating deployment alone as assessment.", "link": "https://www.cs.princeton.edu/ugrad/undergraduate-degrees-requirements" }
+      ]
+    }
+  ]
+}

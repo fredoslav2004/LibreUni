@@ -81,7 +81,7 @@ The performance contract is the most frequently omitted clause. Without it, a us
 **CSR format.** Two arrays: `offsets[0..V]` (start index in `edges` for each vertex) and `edges[0..2E-1]` (target and weight pairs). Successive neighbors are contiguous in memory, maximising cache efficiency for sequential scans.
 
 <PythonDiagram
-  code={String.raw`
+  code={`
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
@@ -160,7 +160,7 @@ Blocked multiplication, also known as tiled multiplication [Cormen et al. 2022, 
 <CodeRunner client:load
   title="Blocked matrix multiplication comparison"
   language="python"
-  code={String.raw`
+  code={`
 import time
 import random
 

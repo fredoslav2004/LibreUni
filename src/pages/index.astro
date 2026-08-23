@@ -22,7 +22,7 @@ const lessons = await getCollection('lessons');
 const careers = await getCollection('careers');
 const publicCourses = courses.filter(course => course.data.status === 'public');
 
-const featuredCourseIds = ['cpp', 'c', 'operating-systems', 'software-engineering', 'machine-learning', 'devops'];
+const featuredCourseIds = ['c', 'data-structures', 'algorithms', 'computer-architecture', 'operating-systems', 'software-engineering'];
 const featuredCourses = featuredCourseIds
     .map(id => publicCourses.find(course => course.id === id))
     .filter(Boolean)
@@ -70,7 +70,7 @@ const iconMap: Record<string, any> = {
                 </h1>
 
                 <p class="mt-8 max-w-2xl text-lg font-medium leading-relaxed text-light-muted dark:text-dark-muted md:text-2xl">
-                    University-level courses, role-based career paths, and topic-level lessons built for serious independent study.
+                    A rigorous computer-science core and focused career paths for serious independent study.
                 </p>
             </div>
 

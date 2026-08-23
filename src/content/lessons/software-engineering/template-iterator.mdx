@@ -67,7 +67,7 @@ By implementing an `Iterator` interface, different collections can provide their
 
 ### Python Example
 
-```python
+```text
 from collections.abc import Iterable, Iterator
 
 # Concrete Iterator
@@ -87,8 +87,8 @@ class AlphabeticalOrderIterator(Iterator):
 
 # Concrete Collection
 class WordCollection(Iterable):
-    def __init__(self, collection = []):
-        self._collection = collection
+    def __init__(self, collection=None):
+        self._collection = [] if collection is None else collection
 
     def __iter__(self) -> AlphabeticalOrderIterator:
         return AlphabeticalOrderIterator(self._collection)

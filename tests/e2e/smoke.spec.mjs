@@ -16,10 +16,10 @@ const ROUTES = [
     expectedText: /Master the\s+fundamentals/i,
   },
   {
-    name: 'main Python lesson',
-    url: 'http://127.0.0.1:4321/lessons/python/intro.html',
-    expectedTitle: /Python/i,
-    expectedText: /Python/i,
+    name: 'main C lesson',
+    url: 'http://127.0.0.1:4321/lessons/c/intro.html',
+    expectedTitle: /C/i,
+    expectedText: /C/i,
   },
   {
     name: 'main About page',
@@ -101,21 +101,16 @@ test.describe('production smoke checks', () => {
 
     const search = page.locator('#course-search');
     await expect(search).toBeVisible();
-    await search.fill('python');
+    await search.fill('algorithms');
 
-    const pythonCard = page.locator('.course-card:has(a[href$="courses/python.html"])');
-    const machineLearningCard = page.locator('.course-card:has(a[href$="courses/machine-learning.html"])');
-    const javascriptCard = page.locator('.course-card:has(a[href$="courses/javascript.html"])');
+    const algorithmsCard = page.locator('.course-card:has(a[href$="courses/algorithms.html"])');
+    const networksCard = page.locator('.course-card:has(a[href$="courses/computer-networks.html"])');
 
-    await expect(pythonCard).toBeVisible();
-    await expect(machineLearningCard).toBeHidden();
+    await expect(algorithmsCard).toBeVisible();
+    await expect(networksCard).toBeHidden();
 
     await search.fill('');
-    await expect(machineLearningCard).toBeVisible();
-    await expect(javascriptCard).toBeHidden();
-
-    await page.locator('#draft-toggle').check();
-    await expect(javascriptCard).toBeVisible();
+    await expect(networksCard).toBeVisible();
   });
 
   test('mobile menu exposes primary navigation', async ({ page }, testInfo) => {
@@ -131,7 +126,7 @@ test.describe('production smoke checks', () => {
   });
 
   test('interactive lesson controls hydrate together', async ({ page }) => {
-    await page.goto('/lessons/math/homomorphisms-isomorphisms.html', { waitUntil: 'networkidle' });
+    await page.goto('/lessons/algorithms/sorting-algorithms.html', { waitUntil: 'networkidle' });
 
     const quiz = page.locator('.quiz-container').first();
     const answer = quiz.getByRole('button').first();
@@ -143,8 +138,8 @@ test.describe('production smoke checks', () => {
     await expect(page.getByRole('dialog', { name: 'Theme settings' })).toBeVisible();
 
     const search = page.getByRole('textbox', { name: /Search courses, modules, and topics/ }).first();
-    await search.fill('galois');
-    await expect(search).toHaveValue('galois');
+    await search.fill('shortest');
+    await expect(search).toHaveValue('shortest');
   });
 
   test('data-structures playground exposes explicit state controls', async ({ page }) => {

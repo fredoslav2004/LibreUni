@@ -52,7 +52,7 @@ Because strings are arrays, we can iterate through them using pointer arithmetic
 
 <CodeRunner client:load
   language="c" 
-  code={`#include <stdio.h>\n\nvoid my_puts(const char *s) {\n    while (*s != '\\0') {\n        putchar(*s);\n        s++; // Move to next character\n    }\n    putchar('\\n');\n}\n\nint main() {\n    my_puts("Mastering C Strings!");\n    return 0;\n}`}
+  code={`#include <stdio.h>\n\nvoid my_puts(const char *s) {\n    while (*s != 0) {\n        putchar(*s);\n        s++; // Move to next character\n    }\n    putchar(10);\n}\n\nint main() {\n    my_puts("Mastering C Strings!");\n    return 0;\n}`}
   output="Mastering C Strings!"
 />
 

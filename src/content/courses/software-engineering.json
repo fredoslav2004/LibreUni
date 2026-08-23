@@ -1,10 +1,10 @@
 {
-  "title": "Software Engineering & OOAD",
-  "description": "Master software engineering principles, Object-Oriented Analysis and Design (OOAD), and advanced testing methodologies.",
+  "title": "Software Engineering",
+  "description": "Requirements, design, testing, evolution, delivery, and professional responsibility in substantial software systems.",
   "icon": "code",
   "color": "bg-blue-600",
   "image": "https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?q=80&w=1470&auto=format&fit=crop",
   "status": "public",
   "ects": 10,
-  "prerequisites": { "required": ["Programming fundamentals: functions, data structures, and testing", "Basic Git workflow", "Ability to read UML-style software models"], "recommended": ["Git and Distributed Version Control", "A completed programming project"] }
+  "prerequisites": { "required": ["Programming fundamentals: functions, data structures, and testing", "Basic version-control workflow"], "recommended": ["A completed programming project", "Data Structures"] }
 }

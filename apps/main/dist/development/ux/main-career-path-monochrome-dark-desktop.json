@@ -22,7 +22,7 @@
       },
       {
         "selector": "p.max-w-2xl.text-xl",
-        "text": "Deep dive into the mathematics and algorithms behind modern artificial intelligence, preparing for r",
+        "text": "A four-stage self-study spine for the computing core of a rigorous bachelor’s degree: mathematics, p",
         "foreground": "#c4c4c4",
         "background": "#181818",
         "fontSize": "20px",
@@ -130,7 +130,7 @@
       },
       {
         "selector": "h1.text-5xl.md\\:text-7xl",
-        "text": "AI & Machine Learning Specialist",
+        "text": "Computer Science Bachelor’s Core",
         "foreground": "#f5f5f5",
         "background": "#181818",
         "fontSize": "72px",
@@ -147,52 +147,16 @@
         }
       },
       {
-        "selector": "h3.text-2xl.font-black",
-        "text": "The Role",
+        "selector": "h2.text-4xl.md\\:text-5xl",
+        "text": "Your Learning Path",
         "foreground": "#f5f5f5",
         "background": "#181818",
-        "fontSize": "24px",
+        "fontSize": "48px",
         "fontWeight": "900",
         "wcag": 16.29,
         "wcagTarget": 3,
         "apca": 100.2,
         "apcaTarget": 45,
-        "worstSimulation": {
-          "name": "tritanopia",
-          "wcag": 16.23,
-          "foreground": "#F7F3FF",
-          "background": "#18181A"
-        }
-      },
-      {
-        "selector": "p.text-light-text.dark\\:text-dark-text",
-        "text": "AI specialists are shaping the future of interacting with computers, driving advancements in medicin",
-        "foreground": "#f5f5f5",
-        "background": "#181818",
-        "fontSize": "16px",
-        "fontWeight": "400",
-        "wcag": 16.29,
-        "wcagTarget": 4.5,
-        "apca": 100.2,
-        "apcaTarget": 60,
-        "worstSimulation": {
-          "name": "tritanopia",
-          "wcag": 16.23,
-          "foreground": "#F7F3FF",
-          "background": "#18181A"
-        }
-      },
-      {
-        "selector": "p.text-light-text.dark\\:text-dark-text",
-        "text": "While AI automates many tasks, the creation, oversight, and ethical steering of these models will re",
-        "foreground": "#f5f5f5",
-        "background": "#181818",
-        "fontSize": "18px",
-        "fontWeight": "400",
-        "wcag": 16.29,
-        "wcagTarget": 4.5,
-        "apca": 100.2,
-        "apcaTarget": 60,
         "worstSimulation": {
           "name": "tritanopia",
           "wcag": 16.23,
@@ -317,7 +281,7 @@
     "metrics": {
       "clientHeight": 1000,
       "clientWidth": 1440,
-      "scrollHeight": 6185,
+      "scrollHeight": 4380,
       "scrollWidth": 1440
     }
   },
@@ -339,7 +303,7 @@
   "target": {
     "app": "main",
     "name": "Career Path (Monochrome Dark)",
-    "url": "http://127.0.0.1:4321/careers/ai-specialist.html",
+    "url": "http://127.0.0.1:4321/careers/computer-science-core.html",
     "theme": "monochrome",
     "mode": "dark"
   },

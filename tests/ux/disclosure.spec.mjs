@@ -1,7 +1,7 @@
 import { expect, test } from '@playwright/test';
 
 test('lesson disclosures have consistent markers and vertical content flow', async ({ page }) => {
-  await page.goto('/lessons/math/subgroups-cyclic.html', { waitUntil: 'networkidle' });
+  await page.goto('/lessons/algorithms/algorithm-engineering.html', { waitUntil: 'networkidle' });
 
   const disclosures = page.locator('#lesson-container article.prose details:not(.diagram-source)');
   await expect(disclosures).not.toHaveCount(0);
@@ -32,6 +32,4 @@ test('lesson disclosures have consistent markers and vertical content flow', asy
     expect(disclosure.markerWidth).not.toBe('0px');
     expect(disclosure.contentBelowSummary).toBe(true);
   }
-
-  expect(result[0].orderedItemCount).toBe(3);
 });

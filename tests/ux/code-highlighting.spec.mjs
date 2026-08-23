@@ -21,7 +21,7 @@ test('monochrome dark code exercise tokens remain readable', async ({ page }) =>
     localStorage.setItem('theme', 'monochrome');
     localStorage.setItem('color-mode', 'dark');
   });
-  await page.goto('/lessons/math/subgroups-cyclic.html', { waitUntil: 'networkidle' });
+  await page.goto('/lessons/algorithms/algorithm-engineering.html', { waitUntil: 'networkidle' });
 
   const result = await page.locator('.code-exercise-codeframe').evaluate((frame) => {
     const background = getComputedStyle(frame).backgroundColor;

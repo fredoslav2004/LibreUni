@@ -1,130 +1,33 @@
 {
   "title": "Systems Engineer",
-  "description": "Build high-performance, low-level software that forms the bedrock of modern computing infrastructure.",
-  "icon": "server",
-  "color": "from-amber-600 to-orange-700",
+  "description": "A systems-focused continuation emphasizing the interface between programs, hardware, operating systems, networks, data, and security.",
+  "icon": "cpu",
+  "color": "from-violet-700 to-slate-900",
   "steps": [
     {
-      "title": "Core Languages",
+      "title": "Core prerequisites",
       "courses": [
-        {
-          "id": "c",
-          "title": "C Programming Language",
-          "type": "internal"
-        },
-        {
-          "id": "cpp",
-          "title": "Modern C++",
-          "type": "internal"
-        },
-        {
-          "title": "The C Programming Language (K&R)",
-          "type": "external",
-          "description": "The authoritative reference by Brian W. Kernighan and Dennis M. Ritchie.",
-          "link": "https://en.wikipedia.org/wiki/The_C_Programming_Language"
-        }
+        { "id": "c", "title": "Programming and Systems in C", "type": "internal" },
+        { "id": "data-structures", "title": "Data Structures", "type": "internal" },
+        { "id": "algorithms", "title": "Algorithms", "type": "internal" },
+        { "id": "computer-architecture", "title": "Computer Architecture", "type": "internal" }
       ]
     },
     {
-      "title": "Systems Fundamentals",
+      "title": "Systems depth",
       "courses": [
-        {
-          "id": "operating-systems",
-          "title": "Operating Systems",
-          "type": "internal"
-        },
-        {
-          "id": "git",
-          "title": "Git & Version Control",
-          "type": "internal"
-        },
-        {
-          "title": "Computer Systems: A Programmer's Perspective",
-          "type": "external",
-          "description": "CS:APP by Randal E. Bryant and David R. O'Hallaron. Crucial for understanding how hardware impacts software.",
-          "link": "http://csapp.cs.cmu.edu/"
-        }
+        { "id": "operating-systems", "title": "Operating Systems", "type": "internal" },
+        { "id": "computer-networks", "title": "Computer Networks", "type": "internal" },
+        { "id": "database-systems", "title": "Database Systems", "type": "internal" },
+        { "id": "cryptography-security", "title": "Cryptography and Security", "type": "internal" }
       ]
     },
     {
-      "title": "Concurrency & High Performance",
+      "title": "Read and build",
       "courses": [
-        {
-          "title": "C++ Concurrency in Action",
-          "type": "external",
-          "description": "Practical Multithreading by Anthony Williams.",
-          "link": "https://www.manning.com/books/c-plus-plus-concurrency-in-action-second-edition"
-        },
-        {
-          "title": "Systems Performance",
-          "type": "external",
-          "description": "Enterprise and the Cloud by Brendan Gregg.",
-          "link": "https://www.brendangregg.com/systems-performance-2nd-edition-book.html"
-        }
-      ]
-    },
-    {
-      "title": "Advanced Mathematics",
-      "courses": [
-        {
-          "id": "math-discrete",
-          "title": "Discrete Mathematics",
-          "type": "internal"
-        },
-        {
-          "id": "math-algebra",
-          "title": "Abstract Algebra (for Systems Modeling)",
-          "type": "internal"
-        }
+        { "title": "Operating Systems: Three Easy Pieces", "type": "external", "description": "Open textbook for a second, implementation-oriented pass through virtualization, concurrency, and persistence.", "link": "https://pages.cs.wisc.edu/~remzi/OSTEP/" },
+        { "title": "Capstone: systems service", "type": "external", "description": "Build and defend a concurrent networked service with explicit resource limits, threat model, observability, and failure-recovery tests.", "link": "https://catalog.mit.edu/degree-charts/computer-science-engineering-course-6-3/" }
       ]
     }
-  ],
-  "details": {
-    "importance": "They build the lower levels of the tech stack\u2014compilers, OS kernels, database engines, and browsers\u2014that all other software fundamentally relies on.",
-    "rolesAndResponsibilities": "Writing low-level, highly optimized C/C++/Rust code, managing memory manually, and tuning hardware interactions.",
-    "aiImpact": "Moderate. AI can optimize specific algorithms, but low-level hardware orchestration and legacy system maintenance remain human-dominated.",
-    "salary": [
-      {
-        "region": "United States",
-        "period": "Annual",
-        "junior": "$95k - $140k",
-        "mid": "$145k - $200k",
-        "senior": "$200k - $350k+"
-      },
-      {
-        "region": "Europe",
-        "period": "Monthly",
-        "junior": "\u20ac4k - \u20ac6k",
-        "mid": "\u20ac6k - \u20ac9k",
-        "senior": "\u20ac9k - \u20ac13k+"
-      },
-      {
-        "region": "India",
-        "period": "Annual",
-        "junior": "\u20b98L - \u20b914L",
-        "mid": "\u20b914L - \u20b930L",
-        "senior": "\u20b930L - \u20b970L+"
-      }
-    ],
-    "marketDemand": "Steady. Not as explosive as web development, but completely vital for infrastructure giants.",
-    "peopleCount": "Estimated ~800,000 globally.",
-    "topCompanies": [
-      "NVIDIA",
-      "Intel",
-      "AMD",
-      "Linux Foundation",
-      "Apple"
-    ],
-    "prominentFigures": [
-      "Linus Torvalds",
-      "John Carmack",
-      "Brendan Gregg",
-      "Brian Kernighan"
-    ],
-    "expectations": {
-      "junior": "Write device drivers, optimize specific algorithms, and fix memory leaks.",
-      "mid": "Design concurrent systems, architect embedded software, and tune deep performance bottlenecks.",
-      "senior": "Architect entirely new file systems, maintain complex standard libraries, and write programming language compilers."
-    }
-  }
+  ]
 }

@@ -43,36 +43,29 @@ ATDD is an extension of TDD where the entire team (Business, Dev, QA) collaborat
 Imagine we are building a `FizzBuzz` function.
 
 ### Phase 1: Red (Test for '1')
-```typescript
-// fizzbuzz.test.ts
-import { fizzBuzz } from './fizzbuzz';
-
-test('returns "1" for 1', () => {
-  expect(fizzBuzz(1)).toBe("1");
-});
+```javascript
+const fizzBuzz = undefined;
+console.assert(fizzBuzz(1) === "1");
 ```
 This fails because `fizzBuzz` is not defined.
 
 ### Phase 2: Green
-```typescript
-// fizzbuzz.ts
-export function fizzBuzz(n: number): string {
+```javascript
+function fizzBuzz(n) {
   return "1"; // Minimal code to pass
 }
 ```
 The test passes.
 
 ### Phase 3: Red (Test for '3')
-```typescript
-test('returns "Fizz" for 3', () => {
-  expect(fizzBuzz(3)).toBe("Fizz");
-});
+```javascript
+console.assert(fizzBuzz(3) === "Fizz");
 ```
 This fails because it returns "1".
 
 ### Phase 4: Green
-```typescript
-export function fizzBuzz(n: number): string {
+```javascript
+function fizzBuzz(n) {
   if (n === 3) return "Fizz";
   return "1";
 }
@@ -80,8 +73,8 @@ export function fizzBuzz(n: number): string {
 
 ### Phase 5: Refactor
 As we add more tests (for 5, 15, etc.), the implementation will grow.
-```typescript
-export function fizzBuzz(n: number): string {
+```javascript
+function fizzBuzz(n) {
   if (n % 15 === 0) return "FizzBuzz";
   if (n % 3 === 0) return "Fizz";
   if (n % 5 === 0) return "Buzz";

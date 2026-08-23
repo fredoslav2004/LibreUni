@@ -1,10 +1,10 @@
 {
-  "title": "C Programming Mastery",
-  "description": "Master the foundations of systems programming, memory management, and low-level computer science with C.",
+  "title": "Programming and Systems in C",
+  "description": "Programming fundamentals, memory, data representation, interfaces, and systems-level problem solving in C.",
   "icon": "code",
   "color": "bg-slate-700",
   "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&q=80&w=800",
   "status": "public",
   "ects": 10,
-  "prerequisites": { "required": ["Basic computer use and a willingness to work in a terminal"], "recommended": ["Basic programming concepts such as variables, functions, and control flow", "Introductory discrete mathematics"] }
+  "prerequisites": { "required": ["Basic computer use and a willingness to work in a terminal"], "recommended": ["Secondary-school algebra", "Introductory discrete mathematics"] }
 }

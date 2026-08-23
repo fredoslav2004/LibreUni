@@ -95,18 +95,19 @@ Replace a temporary variable used to store an expression with a method. This mak
 
 **Before:**
 ```javascript
-let basePrice = quantity * itemPrice;
-if (basePrice > 1000) return basePrice * 0.95;
-else return basePrice * 0.98;
+function priceFor(quantity, itemPrice) {
+  const basePrice = quantity * itemPrice;
+  return basePrice > 1000 ? basePrice * 0.95 : basePrice * 0.98;
+}
 ```
 
 **After:**
 ```javascript
-if (basePrice() > 1000) return basePrice() * 0.95;
-else return basePrice() * 0.98;
-
-function basePrice() {
+function priceFor(quantity, itemPrice) {
+  function basePrice() {
     return quantity * itemPrice;
+  }
+  return basePrice() > 1000 ? basePrice() * 0.95 : basePrice() * 0.98;
 }
 ```
 

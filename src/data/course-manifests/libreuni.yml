@@ -1,7 +1,0 @@
-modules:
-- title: Contributor Guide & Workflow
-  lessons:
-  - project-overview
-  - authoring-showcase
-  - contribution-workflow
-  - testing-and-quality

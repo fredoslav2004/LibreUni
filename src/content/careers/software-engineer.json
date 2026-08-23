@@ -1,0 +1,33 @@
+{
+  "title": "Software Engineer",
+  "description": "A deliberate continuation from the bachelor’s core into reliable software delivery, design judgment, and sustained project practice.",
+  "icon": "code",
+  "color": "from-cyan-700 to-blue-900",
+  "steps": [
+    {
+      "title": "Complete the academic spine",
+      "courses": [
+        { "id": "c", "title": "Programming and Systems in C", "type": "internal" },
+        { "id": "data-structures", "title": "Data Structures", "type": "internal" },
+        { "id": "algorithms", "title": "Algorithms", "type": "internal" },
+        { "id": "software-engineering", "title": "Software Engineering", "type": "internal" }
+      ]
+    },
+    {
+      "title": "Build dependable services",
+      "courses": [
+        { "id": "database-systems", "title": "Database Systems", "type": "internal" },
+        { "id": "computer-networks", "title": "Computer Networks", "type": "internal" },
+        { "id": "cryptography-security", "title": "Cryptography and Security", "type": "internal" },
+        { "title": "Software Engineering at Google", "type": "external", "description": "Evidence-driven guidance on testing, readability, code review, dependency management, and large-scale change.", "link": "https://abseil.io/resources/swe-book" }
+      ]
+    },
+    {
+      "title": "Portfolio and review",
+      "courses": [
+        { "title": "Software Engineering Body of Knowledge (SWEBOK)", "type": "external", "description": "Use the IEEE guide to audit your project’s requirements, design, construction, testing, configuration management, and quality practices.", "link": "https://www.computer.org/education/bodies-of-knowledge/software-engineering" },
+        { "title": "Capstone: production-quality service", "type": "external", "description": "Deliver an accessible, secure, documented service with a test strategy, operational runbook, architecture rationale, and independent review.", "link": "https://www.cs.stanford.edu/bs-degree-requirements" }
+      ]
+    }
+  ]
+}

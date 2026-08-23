@@ -1,0 +1,637 @@
+{
+  "colors": {
+    "findings": [],
+    "samples": [
+      {
+        "selector": "h2.text-\\[10px\\].font-black",
+        "text": "Course Contents",
+        "foreground": "#c4c4c4",
+        "background": "#272727",
+        "fontSize": "10px",
+        "fontWeight": "900",
+        "wcag": 8.56,
+        "wcagTarget": 4.5,
+        "apca": 67.7,
+        "apcaTarget": 60,
+        "worstSimulation": {
+          "name": "protanopia",
+          "wcag": 8.53,
+          "foreground": "#C7C3C3",
+          "background": "#282727"
+        }
+      },
+      {
+        "selector": "a.sidebar-lesson-link.min-h-11",
+        "text": "Type Systems and Lexical Structure",
+        "foreground": "#c4c4c4",
+        "background": "#272727",
+        "fontSize": "14px",
+        "fontWeight": "700",
+        "wcag": 8.56,
+        "wcagTarget": 4.5,
+        "apca": 67.7,
+        "apcaTarget": 60,
+        "worstSimulation": {
+          "name": "protanopia",
+          "wcag": 8.53,
+          "foreground": "#C7C3C3",
+          "background": "#282727"
+        }
+      },
+      {
+        "selector": "a.flex.items-center",
+        "text": "Open Course PDF",
+        "foreground": "#181818",
+        "background": "#c4c4c4",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "wcag": 10.18,
+        "wcagTarget": 4.5,
+        "apca": 70.6,
+        "apcaTarget": 60,
+        "worstSimulation": {
+          "name": "protanopia",
+          "wcag": 10.14,
+          "foreground": "#191818",
+          "background": "#C7C3C3"
+        }
+      },
+      {
+        "selector": "span.text-\\[10px\\].uppercase",
+        "text": "Open Course PDF",
+        "foreground": "#181818",
+        "background": "#c4c4c4",
+        "fontSize": "10px",
+        "fontWeight": "900",
+        "wcag": 10.18,
+        "wcagTarget": 4.5,
+        "apca": 70.6,
+        "apcaTarget": 60,
+        "worstSimulation": {
+          "name": "protanopia",
+          "wcag": 10.14,
+          "foreground": "#191818",
+          "background": "#C7C3C3"
+        }
+      },
+      {
+        "selector": "a.sidebar-lesson-link.min-h-11",
+        "text": "The C Architecture and Abstract Machine",
+        "foreground": "#181818",
+        "background": "#c4c4c4",
+        "fontSize": "14px",
+        "fontWeight": "700",
+        "wcag": 10.18,
+        "wcagTarget": 4.5,
+        "apca": 70.6,
+        "apcaTarget": 60,
+        "worstSimulation": {
+          "name": "protanopia",
+          "wcag": 10.14,
+          "foreground": "#191818",
+          "background": "#C7C3C3"
+        }
+      },
+      {
+        "selector": "span.text-light-muted.dark\\:text-dark-muted",
+        "text": "/",
+        "foreground": "#c4c4c4",
+        "background": "#181818",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "wcag": 10.18,
+        "wcagTarget": 4.5,
+        "apca": 69.8,
+        "apcaTarget": 60,
+        "worstSimulation": {
+          "name": "protanopia",
+          "wcag": 10.14,
+          "foreground": "#C7C3C3",
+          "background": "#191818"
+        }
+      },
+      {
+        "selector": "span.truncate.text-\\[11px\\]",
+        "text": "Foundations & Basics",
+        "foreground": "#c4c4c4",
+        "background": "#181818",
+        "fontSize": "11px",
+        "fontWeight": "900",
+        "wcag": 10.18,
+        "wcagTarget": 4.5,
+        "apca": 69.8,
+        "apcaTarget": 60,
+        "worstSimulation": {
+          "name": "protanopia",
+          "wcag": 10.14,
+          "foreground": "#C7C3C3",
+          "background": "#191818"
+        }
+      },
+      {
+        "selector": "a.flex.min-h-11",
+        "text": "LibreUni",
+        "foreground": "#f5f5f5",
+        "background": "#272727",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "wcag": 13.7,
+        "wcagTarget": 4.5,
+        "apca": 98,
+        "apcaTarget": 60,
+        "worstSimulation": {
+          "name": "deuteranopia",
+          "wcag": 13.67,
+          "foreground": "#FFF2F3",
+          "background": "#560017"
+        }
+      },
+      {
+        "selector": "span.text-lg.md\\:text-xl",
+        "text": "LibreUni",
+        "foreground": "#f5f5f5",
+        "background": "#272727",
+        "fontSize": "20px",
+        "fontWeight": "900",
+        "wcag": 13.7,
+        "wcagTarget": 3,
+        "apca": 98,
+        "apcaTarget": 45,
+        "worstSimulation": {
+          "name": "deuteranopia",
+          "wcag": 13.67,
+          "foreground": "#FFF2F3",
+          "background": "#560017"
+        }
+      },
+      {
+        "selector": "a.min-h-11.px-4",
+        "text": "Home",
+        "foreground": "#f5f5f5",
+        "background": "#272727",
+        "fontSize": "14px",
+        "fontWeight": "700",
+        "wcag": 13.7,
+        "wcagTarget": 4.5,
+        "apca": 98,
+        "apcaTarget": 60,
+        "worstSimulation": {
+          "name": "deuteranopia",
+          "wcag": 13.67,
+          "foreground": "#FFF2F3",
+          "background": "#560017"
+        }
+      },
+      {
+        "selector": "a.mb-5.min-h-11",
+        "text": "Course overview",
+        "foreground": "#f5f5f5",
+        "background": "#272727",
+        "fontSize": "12px",
+        "fontWeight": "900",
+        "wcag": 13.7,
+        "wcagTarget": 4.5,
+        "apca": 98,
+        "apcaTarget": 60,
+        "worstSimulation": {
+          "name": "deuteranopia",
+          "wcag": 13.67,
+          "foreground": "#FFF2F3",
+          "background": "#560017"
+        }
+      },
+      {
+        "selector": "a.inline-flex.min-h-11",
+        "text": "Programming and Systems in C",
+        "foreground": "#e5e5e5",
+        "background": "#181818",
+        "fontSize": "11px",
+        "fontWeight": "900",
+        "wcag": 14.1,
+        "wcagTarget": 4.5,
+        "apca": 89.9,
+        "apcaTarget": 60,
+        "worstSimulation": {
+          "name": "deuteranopia",
+          "wcag": 14.07,
+          "foreground": "#FFDDE0",
+          "background": "#3A000C"
+        }
+      },
+      {
+        "selector": "h1.text-4xl.md\\:text-6xl",
+        "text": "The C Architecture and Abstract Machine",
+        "foreground": "#f5f5f5",
+        "background": "#181818",
+        "fontSize": "60px",
+        "fontWeight": "900",
+        "wcag": 16.29,
+        "wcagTarget": 3,
+        "apca": 100.2,
+        "apcaTarget": 45,
+        "worstSimulation": {
+          "name": "tritanopia",
+          "wcag": 16.23,
+          "foreground": "#F7F3FF",
+          "background": "#18181A"
+        }
+      },
+      {
+        "selector": "#the-philosophy-of-c",
+        "text": "The Philosophy of C",
+        "foreground": "#f5f5f5",
+        "background": "#181818",
+        "fontSize": "40.5px",
+        "fontWeight": "900",
+        "wcag": 16.29,
+        "wcagTarget": 3,
+        "apca": 100.2,
+        "apcaTarget": 45,
+        "worstSimulation": {
+          "name": "tritanopia",
+          "wcag": 16.23,
+          "foreground": "#F7F3FF",
+          "background": "#18181A"
+        }
+      },
+      {
+        "selector": "p",
+        "text": "C is often called a “high-level assembly language.” This description, while reductive, captures the ",
+        "foreground": "#f5f5f5",
+        "background": "#181818",
+        "fontSize": "18px",
+        "fontWeight": "500",
+        "wcag": 16.29,
+        "wcagTarget": 4.5,
+        "apca": 100.2,
+        "apcaTarget": 60,
+        "worstSimulation": {
+          "name": "tritanopia",
+          "wcag": 16.23,
+          "foreground": "#F7F3FF",
+          "background": "#18181A"
+        }
+      },
+      {
+        "selector": "strong",
+        "text": "Abstract Machine",
+        "foreground": "#f5f5f5",
+        "background": "#181818",
+        "fontSize": "18px",
+        "fontWeight": "900",
+        "wcag": 16.29,
+        "wcagTarget": 4.5,
+        "apca": 100.2,
+        "apcaTarget": 60,
+        "worstSimulation": {
+          "name": "tritanopia",
+          "wcag": 16.23,
+          "foreground": "#F7F3FF",
+          "background": "#18181A"
+        }
+      },
+      {
+        "selector": "#the-c-abstract-machine",
+        "text": "The C Abstract Machine",
+        "foreground": "#f5f5f5",
+        "background": "#181818",
+        "fontSize": "27px",
+        "fontWeight": "900",
+        "wcag": 16.29,
+        "wcagTarget": 3,
+        "apca": 100.2,
+        "apcaTarget": 45,
+        "worstSimulation": {
+          "name": "tritanopia",
+          "wcag": 16.23,
+          "foreground": "#F7F3FF",
+          "background": "#18181A"
+        }
+      }
+    ]
+  },
+  "dom": {
+    "findings": [
+      {
+        "severity": "warning",
+        "type": "heading-landmark",
+        "message": "Viewport has 2 visible h1 elements; expected 1",
+        "selector": "aside.fixed.inset-y-0 > div.py-8.flex > div.hidden.md\\:flex:nth-of-type(2) > h2.text-\\[10px\\].font-black, div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > h3.px-4.py-3:nth-of-type(1), div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > h3.px-4.py-3:nth-of-type(2), div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > h3.px-4.py-3:nth-of-type(3), div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > h3.px-4.py-3:nth-of-type(4), div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > h3.px-4.py-3:nth-of-type(5), div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > h3.px-4.py-3:nth-of-type(6), div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > h3.px-4.py-3:nth-of-type(7)"
+      }
+    ],
+    "interactive": [
+      {
+        "label": "LibreUni",
+        "selector": "header.nav-fixed-header.bg-light-bg > div.flex.items-center:nth-of-type(1) > a.flex.min-h-11",
+        "rect": {
+          "bottom": 53.5,
+          "height": 44,
+          "left": 24,
+          "right": 143,
+          "top": 9.5,
+          "width": 119
+        }
+      },
+      {
+        "label": "Home",
+        "selector": "header.nav-fixed-header.bg-light-bg > div.flex.items-center:nth-of-type(1) > nav.hidden.md\\:flex > a.min-h-11.px-4:nth-of-type(1)",
+        "rect": {
+          "bottom": 53.5,
+          "height": 44,
+          "left": 175,
+          "right": 245,
+          "top": 9.5,
+          "width": 70
+        }
+      },
+      {
+        "label": "Courses",
+        "selector": "header.nav-fixed-header.bg-light-bg > div.flex.items-center:nth-of-type(1) > nav.hidden.md\\:flex > a.min-h-11.px-4:nth-of-type(2)",
+        "rect": {
+          "bottom": 53.5,
+          "height": 44,
+          "left": 253,
+          "right": 340,
+          "top": 9.5,
+          "width": 87
+        }
+      },
+      {
+        "label": "Career Paths",
+        "selector": "header.nav-fixed-header.bg-light-bg > div.flex.items-center:nth-of-type(1) > nav.hidden.md\\:flex > a.min-h-11.px-4:nth-of-type(3)",
+        "rect": {
+          "bottom": 53.5,
+          "height": 44,
+          "left": 348,
+          "right": 466,
+          "top": 9.5,
+          "width": 118
+        }
+      },
+      {
+        "label": "Development",
+        "selector": "header.nav-fixed-header.bg-light-bg > div.flex.items-center:nth-of-type(1) > nav.hidden.md\\:flex > a.min-h-11.px-4:nth-of-type(4)",
+        "rect": {
+          "bottom": 53.5,
+          "height": 44,
+          "left": 474,
+          "right": 596,
+          "top": 9.5,
+          "width": 122
+        }
+      },
+      {
+        "label": "About",
+        "selector": "header.nav-fixed-header.bg-light-bg > div.flex.items-center:nth-of-type(1) > nav.hidden.md\\:flex > a.min-h-11.px-4:nth-of-type(5)",
+        "rect": {
+          "bottom": 53.5,
+          "height": 44,
+          "left": 604,
+          "right": 678,
+          "top": 9.5,
+          "width": 74
+        }
+      },
+      {
+        "label": "input",
+        "selector": "astro-island > div.relative.w-full > div.relative > input.input-field.pl-11",
+        "rect": {
+          "bottom": 54.5,
+          "height": 46,
+          "left": 892,
+          "right": 1340,
+          "top": 8.5,
+          "width": 448
+        }
+      },
+      {
+        "label": "Choose theme and appearance. Current theme: Monochrome, dark mode",
+        "selector": "div.flex.items-center:nth-of-type(2) > astro-island > div.relative > button.inline-flex.min-h-11",
+        "rect": {
+          "bottom": 53.5,
+          "height": 44,
+          "left": 1356,
+          "right": 1416,
+          "top": 9.5,
+          "width": 60
+        }
+      },
+      {
+        "label": "Hide course contents",
+        "selector": "#sidebar-collapse",
+        "rect": {
+          "bottom": 140,
+          "height": 44,
+          "left": 195,
+          "right": 239,
+          "top": 96,
+          "width": 44
+        }
+      },
+      {
+        "label": "Course overview",
+        "selector": "div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > a.mb-5.min-h-11:nth-of-type(1)",
+        "rect": {
+          "bottom": 200,
+          "height": 44,
+          "left": 16,
+          "right": 239,
+          "top": 156,
+          "width": 223
+        }
+      },
+      {
+        "label": "Open Course PDF",
+        "selector": "aside.fixed.inset-y-0 > div.py-8.flex > div.mb-6.pb-4:nth-of-type(3) > a.flex.items-center",
+        "rect": {
+          "bottom": 292,
+          "height": 64,
+          "left": 16,
+          "right": 239,
+          "top": 228,
+          "width": 223
+        }
+      },
+      {
+        "label": "The C Architecture and Abstract Machine",
+        "selector": "div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > a.sidebar-lesson-link.min-h-11:nth-of-type(2)",
+        "rect": {
+          "bottom": 452.4,
+          "height": 44.9,
+          "left": 13.8,
+          "right": 241.2,
+          "top": 407.6,
+          "width": 227.5
+        }
+      },
+      {
+        "label": "Type Systems and Lexical Structure",
+        "selector": "div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > a.sidebar-lesson-link.min-h-11:nth-of-type(3)",
+        "rect": {
+          "bottom": 504,
+          "height": 44,
+          "left": 16,
+          "right": 239,
+          "top": 460,
+          "width": 223
+        }
+      },
+      {
+        "label": "Operators, Expressions, and Side Effects",
+        "selector": "div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > a.sidebar-lesson-link.min-h-11:nth-of-type(4)",
+        "rect": {
+          "bottom": 556,
+          "height": 44,
+          "left": 16,
+          "right": 239,
+          "top": 512,
+          "width": 223
+        }
+      },
+      {
+        "label": "Control Flow and Branching Logic",
+        "selector": "div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > a.sidebar-lesson-link.min-h-11:nth-of-type(5)",
+        "rect": {
+          "bottom": 608,
+          "height": 44,
+          "left": 16,
+          "right": 239,
+          "top": 564,
+          "width": 223
+        }
+      },
+      {
+        "label": "Iteration and Loop Mechanisms",
+        "selector": "div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > a.sidebar-lesson-link.min-h-11:nth-of-type(6)",
+        "rect": {
+          "bottom": 660,
+          "height": 44,
+          "left": 16,
+          "right": 239,
+          "top": 616,
+          "width": 223
+        }
+      },
+      {
+        "label": "Functional Decomposition and the Call Stack",
+        "selector": "div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > a.sidebar-lesson-link.min-h-11:nth-of-type(7)",
+        "rect": {
+          "bottom": 712,
+          "height": 44,
+          "left": 16,
+          "right": 239,
+          "top": 668,
+          "width": 223
+        }
+      },
+      {
+        "label": "Contiguous Memory and Array Mechanics",
+        "selector": "div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > a.sidebar-lesson-link.min-h-11:nth-of-type(8)",
+        "rect": {
+          "bottom": 839,
+          "height": 44,
+          "left": 16,
+          "right": 239,
+          "top": 795,
+          "width": 223
+        }
+      },
+      {
+        "label": "Strings and Character Manipulation",
+        "selector": "div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > a.sidebar-lesson-link.min-h-11:nth-of-type(9)",
+        "rect": {
+          "bottom": 891,
+          "height": 44,
+          "left": 16,
+          "right": 239,
+          "top": 847,
+          "width": 223
+        }
+      },
+      {
+        "label": "Compound Data: Structures and Unions",
+        "selector": "div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > a.sidebar-lesson-link.min-h-11:nth-of-type(10)",
+        "rect": {
+          "bottom": 943,
+          "height": 44,
+          "left": 16,
+          "right": 239,
+          "top": 899,
+          "width": 223
+        }
+      },
+      {
+        "label": "Programming and Systems in C",
+        "selector": "div.mb-10.md\\:mb-12:nth-of-type(1) > div.flex.items-center:nth-of-type(1) > div.flex.min-w-0 > a.inline-flex.min-h-11",
+        "rect": {
+          "bottom": 172,
+          "height": 44,
+          "left": 376,
+          "right": 598.1,
+          "top": 128,
+          "width": 222.1
+        }
+      },
+      {
+        "label": "Toggle Expanded View",
+        "selector": "#view-toggle",
+        "rect": {
+          "bottom": 172,
+          "height": 44,
+          "left": 1276,
+          "right": 1320,
+          "top": 128,
+          "width": 44
+        }
+      },
+      {
+        "label": "Next lesson: Type Systems and Lexical Structure",
+        "selector": "main.flex-1.bg-light-bg > div.max-w-5xl.mx-auto > div.flex.justify-between:nth-of-type(2) > a.min-h-11.bg-primary",
+        "rect": {
+          "bottom": 438,
+          "height": 44,
+          "left": 1183,
+          "right": 1320,
+          "top": 394,
+          "width": 137
+        }
+      }
+    ],
+    "metrics": {
+      "clientHeight": 1000,
+      "clientWidth": 1440,
+      "scrollHeight": 5041,
+      "scrollWidth": 1440
+    }
+  },
+  "scores": {
+    "accessibility": 99,
+    "apcaReadability": 100,
+    "colorBlindFriendly": 100,
+    "layoutStability": 96,
+    "overall": 97,
+    "targetSize": 100,
+    "userFriendly": 99,
+    "wcagContrast": 100
+  },
+  "screenshot": "main-c-lesson-monochrome-dark-desktop.png",
+  "summary": {
+    "critical": 0,
+    "warning": 1
+  },
+  "target": {
+    "app": "main",
+    "name": "C Lesson (Monochrome Dark)",
+    "url": "http://127.0.0.1:4321/lessons/c/intro.html",
+    "theme": "monochrome",
+    "mode": "dark"
+  },
+  "viewport": {
+    "name": "desktop",
+    "width": 1440,
+    "height": 1000,
+    "minGap": 6,
+    "minTarget": 24,
+    "recommendedTarget": 44
+  }
+}

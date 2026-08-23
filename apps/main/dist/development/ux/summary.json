@@ -5,7 +5,7 @@
       "samples": [
         {
           "selector": "p.mt-8.max-w-2xl",
-          "text": "University-level courses, role-based career paths, and topic-level lessons built for serious indepen",
+          "text": "A rigorous computer-science core and focused career paths for serious independent study.",
           "foreground": "#64748b",
           "background": "#ffffff",
           "fontSize": "24px",
@@ -329,7 +329,7 @@
         },
         {
           "selector": "a.sidebar-lesson-link.min-h-11",
-          "text": "NumPy: The Foundation of Numerical Computing",
+          "text": "Type Systems and Lexical Structure",
           "foreground": "#525252",
           "background": "#f6f6f6",
           "fontSize": "14px",
@@ -365,7 +365,7 @@
         },
         {
           "selector": "span.truncate.text-\\[11px\\]",
-          "text": "Python Basics & NumPy Foundations",
+          "text": "Foundations & Basics",
           "foreground": "#525252",
           "background": "#ffffff",
           "fontSize": "11px",
@@ -419,7 +419,7 @@
         },
         {
           "selector": "a.sidebar-lesson-link.min-h-11",
-          "text": "The Python Ecosystem and Philosophy",
+          "text": "The C Architecture and Abstract Machine",
           "foreground": "#ffffff",
           "background": "#171717",
           "fontSize": "14px",
@@ -437,7 +437,7 @@
         },
         {
           "selector": "a.inline-flex.min-h-11",
-          "text": "Python for Scientific Computing",
+          "text": "Programming and Systems in C",
           "foreground": "#171717",
           "background": "#ffffff",
           "fontSize": "11px",
@@ -527,7 +527,7 @@
         },
         {
           "selector": "h1.text-4xl.md\\:text-6xl",
-          "text": "The Python Ecosystem and Philosophy",
+          "text": "The C Architecture and Abstract Machine",
           "foreground": "#0a0a0a",
           "background": "#ffffff",
           "fontSize": "60px",
@@ -544,11 +544,11 @@
           }
         },
         {
-          "selector": "#the-philosophy-of-python",
-          "text": "The Philosophy of Python",
+          "selector": "#the-philosophy-of-c",
+          "text": "The Philosophy of C",
           "foreground": "#0a0a0a",
           "background": "#ffffff",
-          "fontSize": "27px",
+          "fontSize": "40.5px",
           "fontWeight": "900",
           "wcag": 19.8,
           "wcagTarget": 3,
@@ -563,7 +563,7 @@
         },
         {
           "selector": "p",
-          "text": "Python is a high-level, interpreted programming language known for its readability and versatility. ",
+          "text": "C is often called a “high-level assembly language.” This description, while reductive, captures the ",
           "foreground": "#0a0a0a",
           "background": "#ffffff",
           "fontSize": "18px",
@@ -581,7 +581,7 @@
         },
         {
           "selector": "strong",
-          "text": "Beautiful is better than ugly.",
+          "text": "Abstract Machine",
           "foreground": "#0a0a0a",
           "background": "#ffffff",
           "fontSize": "18px",
@@ -596,11 +596,36 @@
             "foreground": "#0A0A0B",
             "background": "#FFFFFF"
           }
+        },
+        {
+          "selector": "#the-c-abstract-machine",
+          "text": "The C Abstract Machine",
+          "foreground": "#0a0a0a",
+          "background": "#ffffff",
+          "fontSize": "27px",
+          "fontWeight": "900",
+          "wcag": 19.8,
+          "wcagTarget": 3,
+          "apca": 105.8,
+          "apcaTarget": 45,
+          "worstSimulation": {
+            "name": "tritanopia",
+            "wcag": 19.79,
+            "foreground": "#0A0A0B",
+            "background": "#FFFFFF"
+          }
         }
       ]
     },
     "dom": {
-      "findings": [],
+      "findings": [
+        {
+          "severity": "warning",
+          "type": "heading-landmark",
+          "message": "Viewport has 2 visible h1 elements; expected 1",
+          "selector": "aside.fixed.inset-y-0 > div.py-8.flex > div.hidden.md\\:flex:nth-of-type(2) > h2.text-\\[10px\\].font-black, div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > h3.px-4.py-3:nth-of-type(1), div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > h3.px-4.py-3:nth-of-type(2), div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > h3.px-4.py-3:nth-of-type(3), div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > h3.px-4.py-3:nth-of-type(4), div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > h3.px-4.py-3:nth-of-type(5), div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > h3.px-4.py-3:nth-of-type(6), div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > h3.px-4.py-3:nth-of-type(7)"
+        }
+      ],
       "interactive": [
         {
           "label": "LibreUni",
@@ -735,123 +760,123 @@
           }
         },
         {
-          "label": "The Python Ecosystem and Philosophy",
+          "label": "The C Architecture and Abstract Machine",
           "selector": "div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > a.sidebar-lesson-link.min-h-11:nth-of-type(2)",
           "rect": {
-            "bottom": 462.4,
+            "bottom": 452.4,
             "height": 44.9,
             "left": 13.8,
             "right": 241.2,
-            "top": 417.6,
+            "top": 407.6,
             "width": 227.5
           }
         },
         {
-          "label": "NumPy: The Foundation of Numerical Computing",
+          "label": "Type Systems and Lexical Structure",
           "selector": "div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > a.sidebar-lesson-link.min-h-11:nth-of-type(3)",
           "rect": {
-            "bottom": 514,
+            "bottom": 504,
             "height": 44,
             "left": 16,
             "right": 239,
-            "top": 470,
+            "top": 460,
             "width": 223
           }
         },
         {
-          "label": "Advanced NumPy: Indexing, Slicing, and Reshaping",
+          "label": "Operators, Expressions, and Side Effects",
           "selector": "div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > a.sidebar-lesson-link.min-h-11:nth-of-type(4)",
           "rect": {
-            "bottom": 566,
+            "bottom": 556,
             "height": 44,
             "left": 16,
             "right": 239,
-            "top": 522,
+            "top": 512,
             "width": 223
           }
         },
         {
-          "label": "The Rules of NumPy Broadcasting",
+          "label": "Control Flow and Branching Logic",
           "selector": "div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > a.sidebar-lesson-link.min-h-11:nth-of-type(5)",
           "rect": {
-            "bottom": 618,
+            "bottom": 608,
             "height": 44,
             "left": 16,
             "right": 239,
-            "top": 574,
+            "top": 564,
             "width": 223
           }
         },
         {
-          "label": "SymPy: Symbolic Mathematics in Python",
+          "label": "Iteration and Loop Mechanisms",
           "selector": "div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > a.sidebar-lesson-link.min-h-11:nth-of-type(6)",
           "rect": {
-            "bottom": 745,
+            "bottom": 660,
             "height": 44,
             "left": 16,
             "right": 239,
-            "top": 701,
+            "top": 616,
             "width": 223
           }
         },
         {
-          "label": "Advanced SymPy: Calculus, Differential Equations, and Optimization",
+          "label": "Functional Decomposition and the Call Stack",
           "selector": "div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > a.sidebar-lesson-link.min-h-11:nth-of-type(7)",
           "rect": {
-            "bottom": 797,
+            "bottom": 712,
             "height": 44,
             "left": 16,
             "right": 239,
-            "top": 753,
+            "top": 668,
             "width": 223
           }
         },
         {
-          "label": "SymPy: Matrices, Eigenvalues, and Linear Algebra",
+          "label": "Contiguous Memory and Array Mechanics",
           "selector": "div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > a.sidebar-lesson-link.min-h-11:nth-of-type(8)",
           "rect": {
-            "bottom": 849,
+            "bottom": 839,
             "height": 44,
             "left": 16,
             "right": 239,
-            "top": 805,
+            "top": 795,
             "width": 223
           }
         },
         {
-          "label": "Pandas: High-Performance Data Structures",
+          "label": "Strings and Character Manipulation",
           "selector": "div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > a.sidebar-lesson-link.min-h-11:nth-of-type(9)",
           "rect": {
-            "bottom": 976,
+            "bottom": 891,
             "height": 44,
             "left": 16,
             "right": 239,
-            "top": 932,
+            "top": 847,
             "width": 223
           }
         },
         {
-          "label": "Pandas: Data Cleaning and Wrangling",
+          "label": "Compound Data: Structures and Unions",
           "selector": "div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > a.sidebar-lesson-link.min-h-11:nth-of-type(10)",
           "rect": {
-            "bottom": 1028,
+            "bottom": 943,
             "height": 44,
             "left": 16,
             "right": 239,
-            "top": 984,
+            "top": 899,
             "width": 223
           }
         },
         {
-          "label": "Python for Scientific Computing",
+          "label": "Programming and Systems in C",
           "selector": "div.mb-10.md\\:mb-12:nth-of-type(1) > div.flex.items-center:nth-of-type(1) > div.flex.min-w-0 > a.inline-flex.min-h-11",
           "rect": {
             "bottom": 172,
             "height": 44,
             "left": 376,
-            "right": 609.8,
+            "right": 598.1,
             "top": 128,
-            "width": 233.8
+            "width": 222.1
           }
         },
         {
@@ -867,7 +892,7 @@
           }
         },
         {
-          "label": "Next lesson: NumPy: The Foundation of Numerical Computing",
+          "label": "Next lesson: Type Systems and Lexical Structure",
           "selector": "main.flex-1.bg-light-bg > div.max-w-5xl.mx-auto > div.flex.justify-between:nth-of-type(2) > a.min-h-11.bg-primary",
           "rect": {
             "bottom": 438,
@@ -882,29 +907,29 @@
       "metrics": {
         "clientHeight": 1000,
         "clientWidth": 1440,
-        "scrollHeight": 4130,
+        "scrollHeight": 5039,
         "scrollWidth": 1440
       }
     },
     "scores": {
-      "accessibility": 100,
+      "accessibility": 99,
       "apcaReadability": 100,
       "colorBlindFriendly": 100,
-      "layoutStability": 100,
-      "overall": 100,
+      "layoutStability": 96,
+      "overall": 97,
       "targetSize": 100,
-      "userFriendly": 100,
+      "userFriendly": 99,
       "wcagContrast": 100
     },
-    "screenshot": "main-python-lesson-monochrome-light-desktop.png",
+    "screenshot": "main-c-lesson-monochrome-light-desktop.png",
     "summary": {
       "critical": 0,
-      "warning": 0
+      "warning": 1
     },
     "target": {
       "app": "main",
-      "name": "Python Lesson (Monochrome Light)",
-      "url": "http://127.0.0.1:4321/lessons/python/intro.html",
+      "name": "C Lesson (Monochrome Light)",
+      "url": "http://127.0.0.1:4321/lessons/c/intro.html",
       "theme": "monochrome",
       "mode": "light"
     },
@@ -941,7 +966,7 @@
         },
         {
           "selector": "a.sidebar-lesson-link.min-h-11",
-          "text": "NumPy: The Foundation of Numerical Computing",
+          "text": "Type Systems and Lexical Structure",
           "foreground": "#c4c4c4",
           "background": "#272727",
           "fontSize": "14px",
@@ -995,7 +1020,7 @@
         },
         {
           "selector": "a.sidebar-lesson-link.min-h-11",
-          "text": "The Python Ecosystem and Philosophy",
+          "text": "The C Architecture and Abstract Machine",
           "foreground": "#181818",
           "background": "#c4c4c4",
           "fontSize": "14px",
@@ -1031,7 +1056,7 @@
         },
         {
           "selector": "span.truncate.text-\\[11px\\]",
-          "text": "Python Basics & NumPy Foundations",
+          "text": "Foundations & Basics",
           "foreground": "#c4c4c4",
           "background": "#181818",
           "fontSize": "11px",
@@ -1121,7 +1146,7 @@
         },
         {
           "selector": "a.inline-flex.min-h-11",
-          "text": "Python for Scientific Computing",
+          "text": "Programming and Systems in C",
           "foreground": "#e5e5e5",
           "background": "#181818",
           "fontSize": "11px",
@@ -1139,7 +1164,7 @@
         },
         {
           "selector": "h1.text-4xl.md\\:text-6xl",
-          "text": "The Python Ecosystem and Philosophy",
+          "text": "The C Architecture and Abstract Machine",
           "foreground": "#f5f5f5",
           "background": "#181818",
           "fontSize": "60px",
@@ -1156,11 +1181,11 @@
           }
         },
         {
-          "selector": "#the-philosophy-of-python",
-          "text": "The Philosophy of Python",
+          "selector": "#the-philosophy-of-c",
+          "text": "The Philosophy of C",
           "foreground": "#f5f5f5",
           "background": "#181818",
-          "fontSize": "27px",
+          "fontSize": "40.5px",
           "fontWeight": "900",
           "wcag": 16.29,
           "wcagTarget": 3,
@@ -1175,7 +1200,7 @@
         },
         {
           "selector": "p",
-          "text": "Python is a high-level, interpreted programming language known for its readability and versatility. ",
+          "text": "C is often called a “high-level assembly language.” This description, while reductive, captures the ",
           "foreground": "#f5f5f5",
           "background": "#181818",
           "fontSize": "18px",
@@ -1193,7 +1218,7 @@
         },
         {
           "selector": "strong",
-          "text": "Beautiful is better than ugly.",
+          "text": "Abstract Machine",
           "foreground": "#f5f5f5",
           "background": "#181818",
           "fontSize": "18px",
@@ -1208,11 +1233,36 @@
             "foreground": "#F7F3FF",
             "background": "#18181A"
           }
+        },
+        {
+          "selector": "#the-c-abstract-machine",
+          "text": "The C Abstract Machine",
+          "foreground": "#f5f5f5",
+          "background": "#181818",
+          "fontSize": "27px",
+          "fontWeight": "900",
+          "wcag": 16.29,
+          "wcagTarget": 3,
+          "apca": 100.2,
+          "apcaTarget": 45,
+          "worstSimulation": {
+            "name": "tritanopia",
+            "wcag": 16.23,
+            "foreground": "#F7F3FF",
+            "background": "#18181A"
+          }
         }
       ]
     },
     "dom": {
-      "findings": [],
+      "findings": [
+        {
+          "severity": "warning",
+          "type": "heading-landmark",
+          "message": "Viewport has 2 visible h1 elements; expected 1",
+          "selector": "aside.fixed.inset-y-0 > div.py-8.flex > div.hidden.md\\:flex:nth-of-type(2) > h2.text-\\[10px\\].font-black, div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > h3.px-4.py-3:nth-of-type(1), div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > h3.px-4.py-3:nth-of-type(2), div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > h3.px-4.py-3:nth-of-type(3), div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > h3.px-4.py-3:nth-of-type(4), div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > h3.px-4.py-3:nth-of-type(5), div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > h3.px-4.py-3:nth-of-type(6), div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > h3.px-4.py-3:nth-of-type(7)"
+        }
+      ],
       "interactive": [
         {
           "label": "LibreUni",
@@ -1347,123 +1397,123 @@
           }
         },
         {
-          "label": "The Python Ecosystem and Philosophy",
+          "label": "The C Architecture and Abstract Machine",
           "selector": "div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > a.sidebar-lesson-link.min-h-11:nth-of-type(2)",
           "rect": {
-            "bottom": 462.4,
+            "bottom": 452.4,
             "height": 44.9,
             "left": 13.8,
             "right": 241.2,
-            "top": 417.6,
+            "top": 407.6,
             "width": 227.5
           }
         },
         {
-          "label": "NumPy: The Foundation of Numerical Computing",
+          "label": "Type Systems and Lexical Structure",
           "selector": "div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > a.sidebar-lesson-link.min-h-11:nth-of-type(3)",
           "rect": {
-            "bottom": 514,
+            "bottom": 504,
             "height": 44,
             "left": 16,
             "right": 239,
-            "top": 470,
+            "top": 460,
             "width": 223
           }
         },
         {
-          "label": "Advanced NumPy: Indexing, Slicing, and Reshaping",
+          "label": "Operators, Expressions, and Side Effects",
           "selector": "div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > a.sidebar-lesson-link.min-h-11:nth-of-type(4)",
           "rect": {
-            "bottom": 566,
+            "bottom": 556,
             "height": 44,
             "left": 16,
             "right": 239,
-            "top": 522,
+            "top": 512,
             "width": 223
           }
         },
         {
-          "label": "The Rules of NumPy Broadcasting",
+          "label": "Control Flow and Branching Logic",
           "selector": "div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > a.sidebar-lesson-link.min-h-11:nth-of-type(5)",
           "rect": {
-            "bottom": 618,
+            "bottom": 608,
             "height": 44,
             "left": 16,
             "right": 239,
-            "top": 574,
+            "top": 564,
             "width": 223
           }
         },
         {
-          "label": "SymPy: Symbolic Mathematics in Python",
+          "label": "Iteration and Loop Mechanisms",
           "selector": "div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > a.sidebar-lesson-link.min-h-11:nth-of-type(6)",
           "rect": {
-            "bottom": 745,
+            "bottom": 660,
             "height": 44,
             "left": 16,
             "right": 239,
-            "top": 701,
+            "top": 616,
             "width": 223
           }
         },
         {
-          "label": "Advanced SymPy: Calculus, Differential Equations, and Optimization",
+          "label": "Functional Decomposition and the Call Stack",
           "selector": "div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > a.sidebar-lesson-link.min-h-11:nth-of-type(7)",
           "rect": {
-            "bottom": 797,
+            "bottom": 712,
             "height": 44,
             "left": 16,
             "right": 239,
-            "top": 753,
+            "top": 668,
             "width": 223
           }
         },
         {
-          "label": "SymPy: Matrices, Eigenvalues, and Linear Algebra",
+          "label": "Contiguous Memory and Array Mechanics",
           "selector": "div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > a.sidebar-lesson-link.min-h-11:nth-of-type(8)",
           "rect": {
-            "bottom": 849,
+            "bottom": 839,
             "height": 44,
             "left": 16,
             "right": 239,
-            "top": 805,
+            "top": 795,
             "width": 223
           }
         },
         {
-          "label": "Pandas: High-Performance Data Structures",
+          "label": "Strings and Character Manipulation",
           "selector": "div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > a.sidebar-lesson-link.min-h-11:nth-of-type(9)",
           "rect": {
-            "bottom": 976,
+            "bottom": 891,
             "height": 44,
             "left": 16,
             "right": 239,
-            "top": 932,
+            "top": 847,
             "width": 223
           }
         },
         {
-          "label": "Pandas: Data Cleaning and Wrangling",
+          "label": "Compound Data: Structures and Unions",
           "selector": "div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > a.sidebar-lesson-link.min-h-11:nth-of-type(10)",
           "rect": {
-            "bottom": 1028,
+            "bottom": 943,
             "height": 44,
             "left": 16,
             "right": 239,
-            "top": 984,
+            "top": 899,
             "width": 223
           }
         },
         {
-          "label": "Python for Scientific Computing",
+          "label": "Programming and Systems in C",
           "selector": "div.mb-10.md\\:mb-12:nth-of-type(1) > div.flex.items-center:nth-of-type(1) > div.flex.min-w-0 > a.inline-flex.min-h-11",
           "rect": {
             "bottom": 172,
             "height": 44,
             "left": 376,
-            "right": 609.8,
+            "right": 598.1,
             "top": 128,
-            "width": 233.8
+            "width": 222.1
           }
         },
         {
@@ -1479,7 +1529,7 @@
           }
         },
         {
-          "label": "Next lesson: NumPy: The Foundation of Numerical Computing",
+          "label": "Next lesson: Type Systems and Lexical Structure",
           "selector": "main.flex-1.bg-light-bg > div.max-w-5xl.mx-auto > div.flex.justify-between:nth-of-type(2) > a.min-h-11.bg-primary",
           "rect": {
             "bottom": 438,
@@ -1494,29 +1544,29 @@
       "metrics": {
         "clientHeight": 1000,
         "clientWidth": 1440,
-        "scrollHeight": 4130,
+        "scrollHeight": 5041,
         "scrollWidth": 1440
       }
     },
     "scores": {
-      "accessibility": 100,
+      "accessibility": 99,
       "apcaReadability": 100,
       "colorBlindFriendly": 100,
-      "layoutStability": 100,
-      "overall": 100,
+      "layoutStability": 96,
+      "overall": 97,
       "targetSize": 100,
-      "userFriendly": 100,
+      "userFriendly": 99,
       "wcagContrast": 100
     },
-    "screenshot": "main-python-lesson-monochrome-dark-desktop.png",
+    "screenshot": "main-c-lesson-monochrome-dark-desktop.png",
     "summary": {
       "critical": 0,
-      "warning": 0
+      "warning": 1
     },
     "target": {
       "app": "main",
-      "name": "Python Lesson (Monochrome Dark)",
-      "url": "http://127.0.0.1:4321/lessons/python/intro.html",
+      "name": "C Lesson (Monochrome Dark)",
+      "url": "http://127.0.0.1:4321/lessons/c/intro.html",
       "theme": "monochrome",
       "mode": "dark"
     },
@@ -1553,7 +1603,7 @@
         },
         {
           "selector": "p.max-w-2xl.text-xl",
-          "text": "Deep dive into the mathematics and algorithms behind modern artificial intelligence, preparing for r",
+          "text": "A four-stage self-study spine for the computing core of a rigorous bachelor’s degree: mathematics, p",
           "foreground": "#525252",
           "background": "#ffffff",
           "fontSize": "20px",
@@ -1661,7 +1711,7 @@
         },
         {
           "selector": "h1.text-5xl.md\\:text-7xl",
-          "text": "AI & Machine Learning Specialist",
+          "text": "Computer Science Bachelor’s Core",
           "foreground": "#0a0a0a",
           "background": "#ffffff",
           "fontSize": "72px",
@@ -1678,34 +1728,16 @@
           }
         },
         {
-          "selector": "h3.text-2xl.font-black",
-          "text": "The Role",
+          "selector": "h2.text-4xl.md\\:text-5xl",
+          "text": "Your Learning Path",
           "foreground": "#0a0a0a",
           "background": "#ffffff",
-          "fontSize": "24px",
+          "fontSize": "48px",
           "fontWeight": "900",
           "wcag": 19.8,
           "wcagTarget": 3,
           "apca": 105.8,
           "apcaTarget": 45,
-          "worstSimulation": {
-            "name": "tritanopia",
-            "wcag": 19.79,
-            "foreground": "#0A0A0B",
-            "background": "#FFFFFF"
-          }
-        },
-        {
-          "selector": "p.text-light-text.dark\\:text-dark-text",
-          "text": "While AI automates many tasks, the creation, oversight, and ethical steering of these models will re",
-          "foreground": "#0a0a0a",
-          "background": "#ffffff",
-          "fontSize": "18px",
-          "fontWeight": "400",
-          "wcag": 19.8,
-          "wcagTarget": 4.5,
-          "apca": 105.8,
-          "apcaTarget": 60,
           "worstSimulation": {
             "name": "tritanopia",
             "wcag": 19.79,
@@ -1830,7 +1862,7 @@
       "metrics": {
         "clientHeight": 1000,
         "clientWidth": 1440,
-        "scrollHeight": 6185,
+        "scrollHeight": 4380,
         "scrollWidth": 1440
       }
     },
@@ -1852,7 +1884,7 @@
     "target": {
       "app": "main",
       "name": "Career Path (Monochrome Light)",
-      "url": "http://127.0.0.1:4321/careers/ai-specialist.html",
+      "url": "http://127.0.0.1:4321/careers/computer-science-core.html",
       "theme": "monochrome",
       "mode": "light"
     },
@@ -1889,7 +1921,7 @@
         },
         {
           "selector": "p.max-w-2xl.text-xl",
-          "text": "Deep dive into the mathematics and algorithms behind modern artificial intelligence, preparing for r",
+          "text": "A four-stage self-study spine for the computing core of a rigorous bachelor’s degree: mathematics, p",
           "foreground": "#c4c4c4",
           "background": "#181818",
           "fontSize": "20px",
@@ -1997,7 +2029,7 @@
         },
         {
           "selector": "h1.text-5xl.md\\:text-7xl",
-          "text": "AI & Machine Learning Specialist",
+          "text": "Computer Science Bachelor’s Core",
           "foreground": "#f5f5f5",
           "background": "#181818",
           "fontSize": "72px",
@@ -2014,52 +2046,16 @@
           }
         },
         {
-          "selector": "h3.text-2xl.font-black",
-          "text": "The Role",
+          "selector": "h2.text-4xl.md\\:text-5xl",
+          "text": "Your Learning Path",
           "foreground": "#f5f5f5",
           "background": "#181818",
-          "fontSize": "24px",
+          "fontSize": "48px",
           "fontWeight": "900",
           "wcag": 16.29,
           "wcagTarget": 3,
           "apca": 100.2,
           "apcaTarget": 45,
-          "worstSimulation": {
-            "name": "tritanopia",
-            "wcag": 16.23,
-            "foreground": "#F7F3FF",
-            "background": "#18181A"
-          }
-        },
-        {
-          "selector": "p.text-light-text.dark\\:text-dark-text",
-          "text": "AI specialists are shaping the future of interacting with computers, driving advancements in medicin",
-          "foreground": "#f5f5f5",
-          "background": "#181818",
-          "fontSize": "16px",
-          "fontWeight": "400",
-          "wcag": 16.29,
-          "wcagTarget": 4.5,
-          "apca": 100.2,
-          "apcaTarget": 60,
-          "worstSimulation": {
-            "name": "tritanopia",
-            "wcag": 16.23,
-            "foreground": "#F7F3FF",
-            "background": "#18181A"
-          }
-        },
-        {
-          "selector": "p.text-light-text.dark\\:text-dark-text",
-          "text": "While AI automates many tasks, the creation, oversight, and ethical steering of these models will re",
-          "foreground": "#f5f5f5",
-          "background": "#181818",
-          "fontSize": "18px",
-          "fontWeight": "400",
-          "wcag": 16.29,
-          "wcagTarget": 4.5,
-          "apca": 100.2,
-          "apcaTarget": 60,
           "worstSimulation": {
             "name": "tritanopia",
             "wcag": 16.23,
@@ -2184,7 +2180,7 @@
       "metrics": {
         "clientHeight": 1000,
         "clientWidth": 1440,
-        "scrollHeight": 6185,
+        "scrollHeight": 4380,
         "scrollWidth": 1440
       }
     },
@@ -2206,7 +2202,7 @@
     "target": {
       "app": "main",
       "name": "Career Path (Monochrome Dark)",
-      "url": "http://127.0.0.1:4321/careers/ai-specialist.html",
+      "url": "http://127.0.0.1:4321/careers/computer-science-core.html",
       "theme": "monochrome",
       "mode": "dark"
     },
@@ -2225,7 +2221,7 @@
       "samples": [
         {
           "selector": "p.mt-8.max-w-2xl",
-          "text": "University-level courses, role-based career paths, and topic-level lessons built for serious indepen",
+          "text": "A rigorous computer-science core and focused career paths for serious independent study.",
           "foreground": "#64748b",
           "background": "#ffffff",
           "fontSize": "18px",
@@ -2412,7 +2408,7 @@
       "metrics": {
         "clientHeight": 844,
         "clientWidth": 390,
-        "scrollHeight": 5275,
+        "scrollHeight": 5179,
         "scrollWidth": 390
       }
     },
@@ -2471,7 +2467,7 @@
         },
         {
           "selector": "span.truncate.text-\\[11px\\]",
-          "text": "Python Basics & NumPy Foundations",
+          "text": "Foundations & Basics",
           "foreground": "#525252",
           "background": "#ffffff",
           "fontSize": "11px",
@@ -2489,7 +2485,7 @@
         },
         {
           "selector": "a.inline-flex.min-h-11",
-          "text": "Python for Scientific Computing",
+          "text": "Programming and Systems in C",
           "foreground": "#171717",
           "background": "#ffffff",
           "fontSize": "11px",
@@ -2579,7 +2575,7 @@
         },
         {
           "selector": "h1.text-4xl.md\\:text-6xl",
-          "text": "The Python Ecosystem and Philosophy",
+          "text": "The C Architecture and Abstract Machine",
           "foreground": "#0a0a0a",
           "background": "#ffffff",
           "fontSize": "36px",
@@ -2596,11 +2592,11 @@
           }
         },
         {
-          "selector": "#the-philosophy-of-python",
-          "text": "The Philosophy of Python",
+          "selector": "#the-philosophy-of-c",
+          "text": "The Philosophy of C",
           "foreground": "#0a0a0a",
           "background": "#ffffff",
-          "fontSize": "27px",
+          "fontSize": "40.5px",
           "fontWeight": "900",
           "wcag": 19.8,
           "wcagTarget": 3,
@@ -2615,7 +2611,7 @@
         },
         {
           "selector": "p",
-          "text": "Python is a high-level, interpreted programming language known for its readability and versatility. ",
+          "text": "C is often called a “high-level assembly language.” This description, while reductive, captures the ",
           "foreground": "#0a0a0a",
           "background": "#ffffff",
           "fontSize": "18px",
@@ -2634,7 +2630,14 @@
       ]
     },
     "dom": {
-      "findings": [],
+      "findings": [
+        {
+          "severity": "warning",
+          "type": "heading-landmark",
+          "message": "Viewport has 2 visible h1 elements; expected 1",
+          "selector": "aside.fixed.inset-y-0 > div.py-8.flex > div.md\\:hidden.flex:nth-of-type(1) > h2.text-2xl.font-black, div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > h3.px-4.py-3:nth-of-type(1), div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > h3.px-4.py-3:nth-of-type(2), div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > h3.px-4.py-3:nth-of-type(3), div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > h3.px-4.py-3:nth-of-type(4), div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > h3.px-4.py-3:nth-of-type(5), div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > h3.px-4.py-3:nth-of-type(6), div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > h3.px-4.py-3:nth-of-type(7)"
+        }
+      ],
       "interactive": [
         {
           "label": "LibreUni",
@@ -2673,38 +2676,38 @@
           }
         },
         {
-          "label": "Python for Scientific Computing",
+          "label": "Programming and Systems in C",
           "selector": "div.mb-10.md\\:mb-12:nth-of-type(1) > div.flex.items-center:nth-of-type(1) > div.flex.min-w-0 > a.inline-flex.min-h-11",
           "rect": {
             "bottom": 148,
             "height": 44,
             "left": 24,
-            "right": 176.5,
+            "right": 214.1,
             "top": 104,
-            "width": 152.5
+            "width": 190.1
           }
         },
         {
           "label": "Course contents",
           "selector": "#sidebar-toggle",
           "rect": {
-            "bottom": 388.8,
+            "bottom": 428.4,
             "height": 44,
             "left": 24,
             "right": 170,
-            "top": 344.8,
+            "top": 384.4,
             "width": 146
           }
         },
         {
-          "label": "Next lesson: NumPy: The Foundation of Numerical Computing",
+          "label": "Next lesson: Type Systems and Lexical Structure",
           "selector": "main.flex-1.bg-light-bg > div.max-w-5xl.mx-auto > div.flex.justify-between:nth-of-type(2) > a.min-h-11.bg-primary",
           "rect": {
-            "bottom": 472.8,
+            "bottom": 512.4,
             "height": 44,
             "left": 270,
             "right": 366,
-            "top": 428.8,
+            "top": 468.4,
             "width": 96
           }
         }
@@ -2712,29 +2715,29 @@
       "metrics": {
         "clientHeight": 844,
         "clientWidth": 390,
-        "scrollHeight": 5094,
+        "scrollHeight": 7215,
         "scrollWidth": 390
       }
     },
     "scores": {
-      "accessibility": 100,
+      "accessibility": 99,
       "apcaReadability": 100,
       "colorBlindFriendly": 100,
-      "layoutStability": 100,
-      "overall": 100,
+      "layoutStability": 96,
+      "overall": 97,
       "targetSize": 100,
-      "userFriendly": 100,
+      "userFriendly": 99,
       "wcagContrast": 100
     },
-    "screenshot": "main-python-lesson-monochrome-light-mobile.png",
+    "screenshot": "main-c-lesson-monochrome-light-mobile.png",
     "summary": {
       "critical": 0,
-      "warning": 0
+      "warning": 1
     },
     "target": {
       "app": "main",
-      "name": "Python Lesson (Monochrome Light)",
-      "url": "http://127.0.0.1:4321/lessons/python/intro.html",
+      "name": "C Lesson (Monochrome Light)",
+      "url": "http://127.0.0.1:4321/lessons/c/intro.html",
       "theme": "monochrome",
       "mode": "light"
     },
@@ -2771,7 +2774,7 @@
         },
         {
           "selector": "span.truncate.text-\\[11px\\]",
-          "text": "Python Basics & NumPy Foundations",
+          "text": "Foundations & Basics",
           "foreground": "#c4c4c4",
           "background": "#181818",
           "fontSize": "11px",
@@ -2861,7 +2864,7 @@
         },
         {
           "selector": "a.inline-flex.min-h-11",
-          "text": "Python for Scientific Computing",
+          "text": "Programming and Systems in C",
           "foreground": "#e5e5e5",
           "background": "#181818",
           "fontSize": "11px",
@@ -2879,7 +2882,7 @@
         },
         {
           "selector": "h1.text-4xl.md\\:text-6xl",
-          "text": "The Python Ecosystem and Philosophy",
+          "text": "The C Architecture and Abstract Machine",
           "foreground": "#f5f5f5",
           "background": "#181818",
           "fontSize": "36px",
@@ -2896,11 +2899,11 @@
           }
         },
         {
-          "selector": "#the-philosophy-of-python",
-          "text": "The Philosophy of Python",
+          "selector": "#the-philosophy-of-c",
+          "text": "The Philosophy of C",
           "foreground": "#f5f5f5",
           "background": "#181818",
-          "fontSize": "27px",
+          "fontSize": "40.5px",
           "fontWeight": "900",
           "wcag": 16.29,
           "wcagTarget": 3,
@@ -2915,7 +2918,7 @@
         },
         {
           "selector": "p",
-          "text": "Python is a high-level, interpreted programming language known for its readability and versatility. ",
+          "text": "C is often called a “high-level assembly language.” This description, while reductive, captures the ",
           "foreground": "#f5f5f5",
           "background": "#181818",
           "fontSize": "18px",
@@ -2934,7 +2937,14 @@
       ]
     },
     "dom": {
-      "findings": [],
+      "findings": [
+        {
+          "severity": "warning",
+          "type": "heading-landmark",
+          "message": "Viewport has 2 visible h1 elements; expected 1",
+          "selector": "aside.fixed.inset-y-0 > div.py-8.flex > div.md\\:hidden.flex:nth-of-type(1) > h2.text-2xl.font-black, div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > h3.px-4.py-3:nth-of-type(1), div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > h3.px-4.py-3:nth-of-type(2), div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > h3.px-4.py-3:nth-of-type(3), div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > h3.px-4.py-3:nth-of-type(4), div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > h3.px-4.py-3:nth-of-type(5), div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > h3.px-4.py-3:nth-of-type(6), div.flex.min-h-screen:nth-of-type(3) > aside.fixed.inset-y-0 > div.py-8.flex > h3.px-4.py-3:nth-of-type(7)"
+        }
+      ],
       "interactive": [
         {
           "label": "LibreUni",
@@ -2973,38 +2983,38 @@
           }
         },
         {
-          "label": "Python for Scientific Computing",
+          "label": "Programming and Systems in C",
           "selector": "div.mb-10.md\\:mb-12:nth-of-type(1) > div.flex.items-center:nth-of-type(1) > div.flex.min-w-0 > a.inline-flex.min-h-11",
           "rect": {
             "bottom": 148,
             "height": 44,
             "left": 24,
-            "right": 176.5,
+            "right": 214.1,
             "top": 104,
-            "width": 152.5
+            "width": 190.1
           }
         },
         {
           "label": "Course contents",
           "selector": "#sidebar-toggle",
           "rect": {
-            "bottom": 388.8,
+            "bottom": 428.4,
             "height": 44,
             "left": 24,
             "right": 170,
-            "top": 344.8,
+            "top": 384.4,
             "width": 146
           }
         },
         {
-          "label": "Next lesson: NumPy: The Foundation of Numerical Computing",
+          "label": "Next lesson: Type Systems and Lexical Structure",
           "selector": "main.flex-1.bg-light-bg > div.max-w-5xl.mx-auto > div.flex.justify-between:nth-of-type(2) > a.min-h-11.bg-primary",
           "rect": {
-            "bottom": 472.8,
+            "bottom": 512.4,
             "height": 44,
             "left": 270,
             "right": 366,
-            "top": 428.8,
+            "top": 468.4,
             "width": 96
           }
         }
@@ -3012,29 +3022,29 @@
       "metrics": {
         "clientHeight": 844,
         "clientWidth": 390,
-        "scrollHeight": 5094,
+        "scrollHeight": 7217,
         "scrollWidth": 390
       }
     },
     "scores": {
-      "accessibility": 100,
+      "accessibility": 99,
       "apcaReadability": 100,
       "colorBlindFriendly": 100,
-      "layoutStability": 100,
-      "overall": 100,
+      "layoutStability": 96,
+      "overall": 97,
       "targetSize": 100,
-      "userFriendly": 100,
+      "userFriendly": 99,
       "wcagContrast": 100
     },
-    "screenshot": "main-python-lesson-monochrome-dark-mobile.png",
+    "screenshot": "main-c-lesson-monochrome-dark-mobile.png",
     "summary": {
       "critical": 0,
-      "warning": 0
+      "warning": 1
     },
     "target": {
       "app": "main",
-      "name": "Python Lesson (Monochrome Dark)",
-      "url": "http://127.0.0.1:4321/lessons/python/intro.html",
+      "name": "C Lesson (Monochrome Dark)",
+      "url": "http://127.0.0.1:4321/lessons/c/intro.html",
       "theme": "monochrome",
       "mode": "dark"
     },
@@ -3071,7 +3081,7 @@
         },
         {
           "selector": "p.max-w-2xl.text-xl",
-          "text": "Deep dive into the mathematics and algorithms behind modern artificial intelligence, preparing for r",
+          "text": "A four-stage self-study spine for the computing core of a rigorous bachelor’s degree: mathematics, p",
           "foreground": "#525252",
           "background": "#ffffff",
           "fontSize": "20px",
@@ -3161,7 +3171,7 @@
         },
         {
           "selector": "h1.text-5xl.md\\:text-7xl",
-          "text": "AI & Machine Learning Specialist",
+          "text": "Computer Science Bachelor’s Core",
           "foreground": "#0a0a0a",
           "background": "#ffffff",
           "fontSize": "48px",
@@ -3234,7 +3244,7 @@
       "metrics": {
         "clientHeight": 844,
         "clientWidth": 390,
-        "scrollHeight": 11355,
+        "scrollHeight": 7930,
         "scrollWidth": 390
       }
     },
@@ -3256,7 +3266,7 @@
     "target": {
       "app": "main",
       "name": "Career Path (Monochrome Light)",
-      "url": "http://127.0.0.1:4321/careers/ai-specialist.html",
+      "url": "http://127.0.0.1:4321/careers/computer-science-core.html",
       "theme": "monochrome",
       "mode": "light"
     },
@@ -3293,7 +3303,7 @@
         },
         {
           "selector": "p.max-w-2xl.text-xl",
-          "text": "Deep dive into the mathematics and algorithms behind modern artificial intelligence, preparing for r",
+          "text": "A four-stage self-study spine for the computing core of a rigorous bachelor’s degree: mathematics, p",
           "foreground": "#c4c4c4",
           "background": "#181818",
           "fontSize": "20px",
@@ -3383,7 +3393,7 @@
         },
         {
           "selector": "h1.text-5xl.md\\:text-7xl",
-          "text": "AI & Machine Learning Specialist",
+          "text": "Computer Science Bachelor’s Core",
           "foreground": "#f5f5f5",
           "background": "#181818",
           "fontSize": "48px",
@@ -3456,7 +3466,7 @@
       "metrics": {
         "clientHeight": 844,
         "clientWidth": 390,
-        "scrollHeight": 11355,
+        "scrollHeight": 7930,
         "scrollWidth": 390
       }
     },
@@ -3478,7 +3488,7 @@
     "target": {
       "app": "main",
       "name": "Career Path (Monochrome Dark)",
-      "url": "http://127.0.0.1:4321/careers/ai-specialist.html",
+      "url": "http://127.0.0.1:4321/careers/computer-science-core.html",
       "theme": "monochrome",
       "mode": "dark"
     },

@@ -27,14 +27,8 @@ const modules = lessons.reduce<{ title: string; lessons: OrderedLesson[] }[]>((g
   return groups;
 }, []);
 
-const category = course.id.startsWith('math') ? 'Mathematics'
-  : ['c', 'cpp', 'operating-systems', 'software-engineering', 'software-architecture', 'programming-languages'].includes(course.id) ? 'Computer Science'
-  : course.id === 'machine-learning' ? 'AI & ML'
-  : ['philosophy', 'philosophy-science'].includes(course.id) ? 'Philosophy'
-  : ['devops', 'git', 'uml', 'python', 'javascript', 'libreuni', 'power-user'].includes(course.id) ? 'Development'
-  : course.id === 'team-dynamics' ? 'Management'
-  : 'General Studies';
-const categoryClass = ({ Mathematics: 'math', 'Computer Science': 'cs', 'AI & ML': 'ai', Philosophy: 'phil', Development: 'dev', Management: 'mgmt' } as Record<string, string>)[category] ?? 'other';
+const category = 'Computer Science';
+const categoryClass = 'cs';
 const lessonSlugs = lessons.map((lesson) => lesson.id);
 const firstLesson = lessons[0];
 ---

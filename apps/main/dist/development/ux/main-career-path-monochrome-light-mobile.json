@@ -22,7 +22,7 @@
       },
       {
         "selector": "p.max-w-2xl.text-xl",
-        "text": "Deep dive into the mathematics and algorithms behind modern artificial intelligence, preparing for r",
+        "text": "A four-stage self-study spine for the computing core of a rigorous bachelor’s degree: mathematics, p",
         "foreground": "#525252",
         "background": "#ffffff",
         "fontSize": "20px",
@@ -112,7 +112,7 @@
       },
       {
         "selector": "h1.text-5xl.md\\:text-7xl",
-        "text": "AI & Machine Learning Specialist",
+        "text": "Computer Science Bachelor’s Core",
         "foreground": "#0a0a0a",
         "background": "#ffffff",
         "fontSize": "48px",
@@ -185,7 +185,7 @@
     "metrics": {
       "clientHeight": 844,
       "clientWidth": 390,
-      "scrollHeight": 11355,
+      "scrollHeight": 7930,
       "scrollWidth": 390
     }
   },
@@ -207,7 +207,7 @@
   "target": {
     "app": "main",
     "name": "Career Path (Monochrome Light)",
-    "url": "http://127.0.0.1:4321/careers/ai-specialist.html",
+    "url": "http://127.0.0.1:4321/careers/computer-science-core.html",
     "theme": "monochrome",
     "mode": "light"
   },

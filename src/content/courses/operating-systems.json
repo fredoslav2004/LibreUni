@@ -1,6 +1,6 @@
 {
-  "title": "Operating Systems Internals",
-  "description": "A comprehensive journey from OS fundamentals to the architecture and history of modern systems like Windows, macOS, Linux, and BSD.",
+  "title": "Operating Systems",
+  "description": "Processes, threads, synchronization, virtual memory, filesystems, protection, and the design of modern operating systems.",
   "icon": "desktop",
   "color": "bg-indigo-700",
   "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800",

@@ -4,7 +4,7 @@
     "samples": [
       {
         "selector": "p.mt-8.max-w-2xl",
-        "text": "University-level courses, role-based career paths, and topic-level lessons built for serious indepen",
+        "text": "A rigorous computer-science core and focused career paths for serious independent study.",
         "foreground": "#64748b",
         "background": "#ffffff",
         "fontSize": "18px",
@@ -191,7 +191,7 @@
     "metrics": {
       "clientHeight": 844,
       "clientWidth": 390,
-      "scrollHeight": 5275,
+      "scrollHeight": 5179,
       "scrollWidth": 390
     }
   },
