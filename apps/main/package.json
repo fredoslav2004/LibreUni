@@ -29,7 +29,7 @@
     "yaml": "^2.9.0"
   },
   "devDependencies": {
-    "@types/node": "^25.2.3",
+    "@types/node": "^26.4.0",
     "@types/react-katex": "^3.0.4"
   }
 }
