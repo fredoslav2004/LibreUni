@@ -24,10 +24,10 @@
     "test:report": "playwright show-report reports/playwright"
   },
   "devDependencies": {
-    "@axe-core/playwright": "^4.11.3",
+    "@axe-core/playwright": "^4.13.0",
     "@cantoo/color-blindness": "^1.0.5",
     "@lhci/cli": "^0.15.1",
-    "@playwright/test": "^1.59.1",
-    "colorjs.io": "^0.6.1"
+    "@playwright/test": "^1.62.1",
+    "colorjs.io": "^0.7.1"
   }
 }
