@@ -11,11 +11,11 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/mdx": "^2.0.3",
-    "@astrojs/react": "^3.0.7",
-    "@astrojs/tailwind": "^5.1.0",
+    "@astrojs/mdx": "^7.0.8",
+    "@astrojs/react": "^6.0.4",
+    "@astrojs/tailwind": "^6.0.2",
     "@tailwindcss/typography": "^0.5.19",
-    "astro": "^4.1.1",
+    "astro": "^7.2.9",
     "katex": "^0.16.9",
     "lucide-react": "^0.309.0",
     "plantuml-encoder": "^1.4.0",
